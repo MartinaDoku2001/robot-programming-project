@@ -1,0 +1,9 @@
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/uninstall.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/simple_robot_uninstall.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/test.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/edit_cache.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/rebuild_cache.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/list_install_components.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/install.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/install/local.dir
+/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles/install/strip.dir
