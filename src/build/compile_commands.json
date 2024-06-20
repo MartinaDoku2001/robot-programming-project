@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/martina/rp_project/robot-programming-project/src/build",
+  "command": "/usr/bin/g++ -Dsimple_robot_EXPORTS -g -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/simple_robot.dir/src/robot.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp",
+  "file": "/home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp"
+}
+]

@@ -8,5 +8,6 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages",
         "/home/martina/other/install/lib/python3.10/site-packages/"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/martina/rp_project/robot-programming-project/src/simple_robot"
 }
