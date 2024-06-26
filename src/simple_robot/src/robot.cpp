@@ -1,6 +1,6 @@
 /* implementation of the code for robots */
 
-#include "robot.h"
+#include "../include/robot.h"
 
 // Constructor
 Robot::Robot(Position position,  Velocity velocity) {

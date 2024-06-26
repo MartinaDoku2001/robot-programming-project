@@ -1,0 +1,462 @@
+[1.452s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/martina/rp_project/robot-programming-project']
+[1.453s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/martina/rp_project/robot-programming-project'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a658c1471f0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7a658c255c90>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7a658c255c90>>, mixin_verb=('list',))
+[3.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.513s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/martina/rp_project/robot-programming-project'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['ignore', 'ignore_ament_install']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'ignore'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'ignore_ament_install'
+[3.518s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['colcon_pkg']
+[3.519s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'colcon_pkg'
+[3.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['colcon_meta']
+[3.521s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'colcon_meta'
+[3.522s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['ros']
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'ros'
+[3.624s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['cmake', 'python']
+[3.624s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'cmake'
+[3.625s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'python'
+[3.625s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extensions ['python_setup_py']
+[3.625s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project) by extension 'python_setup_py'
+[3.626s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/build) by extensions ['ignore', 'ignore_ament_install']
+[3.627s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/build) by extension 'ignore'
+[3.627s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/build) ignored
+[3.628s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/install) by extensions ['ignore', 'ignore_ament_install']
+[3.629s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/install) by extension 'ignore'
+[3.629s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/install) ignored
+[3.630s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/log) by extensions ['ignore', 'ignore_ament_install']
+[3.631s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/log) by extension 'ignore'
+[3.631s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/log) ignored
+[3.632s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['ignore', 'ignore_ament_install']
+[3.633s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'ignore'
+[3.633s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'ignore_ament_install'
+[3.633s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['colcon_pkg']
+[3.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'colcon_pkg'
+[3.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['colcon_meta']
+[3.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'colcon_meta'
+[3.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['ros']
+[3.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'ros'
+[3.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['cmake', 'python']
+[3.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'cmake'
+[3.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'python'
+[3.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extensions ['python_setup_py']
+[3.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src) by extension 'python_setup_py'
+[3.637s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['ignore', 'ignore_ament_install']
+[3.638s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'ignore'
+[3.638s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'ignore_ament_install'
+[3.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['colcon_pkg']
+[3.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'colcon_pkg'
+[3.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['colcon_meta']
+[3.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'colcon_meta'
+[3.640s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['ros']
+[3.640s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'ros'
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['cmake', 'python']
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'cmake'
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'python'
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extensions ['python_setup_py']
+[3.642s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build) by extension 'python_setup_py'
+[3.643s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['ignore', 'ignore_ament_install']
+[3.643s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'ignore'
+[3.644s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'ignore_ament_install'
+[3.644s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['colcon_pkg']
+[3.645s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'colcon_pkg'
+[3.645s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['colcon_meta']
+[3.645s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'colcon_meta'
+[3.646s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['ros']
+[3.646s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'ros'
+[3.647s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['cmake', 'python']
+[3.647s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'cmake'
+[3.647s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'python'
+[3.648s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extensions ['python_setup_py']
+[3.648s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles) by extension 'python_setup_py'
+[3.649s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['ignore', 'ignore_ament_install']
+[3.649s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'ignore'
+[3.650s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'ignore_ament_install'
+[3.650s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['colcon_pkg']
+[3.650s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'colcon_pkg'
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['colcon_meta']
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'colcon_meta'
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['ros']
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'ros'
+[3.652s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['cmake', 'python']
+[3.652s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'cmake'
+[3.653s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'python'
+[3.653s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extensions ['python_setup_py']
+[3.653s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1) by extension 'python_setup_py'
+[3.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['ignore', 'ignore_ament_install']
+[3.655s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'ignore'
+[3.655s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'ignore_ament_install'
+[3.655s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['colcon_pkg']
+[3.656s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'colcon_pkg'
+[3.656s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['colcon_meta']
+[3.656s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'colcon_meta'
+[3.657s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['ros']
+[3.657s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'ros'
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['cmake', 'python']
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'cmake'
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'python'
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extensions ['python_setup_py']
+[3.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC) by extension 'python_setup_py'
+[3.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['ignore', 'ignore_ament_install']
+[3.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ignore'
+[3.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ignore_ament_install'
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'colcon_pkg'
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['colcon_meta']
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'colcon_meta'
+[3.662s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['ros']
+[3.662s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ros'
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['cmake', 'python']
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'cmake'
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'python'
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['python_setup_py']
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'python_setup_py'
+[3.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ignore', 'ignore_ament_install']
+[3.666s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore'
+[3.672s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore_ament_install'
+[3.676s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_pkg']
+[3.677s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_pkg'
+[3.678s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_meta']
+[3.679s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_meta'
+[3.679s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ros']
+[3.679s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ros'
+[3.680s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['cmake', 'python']
+[3.680s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'cmake'
+[3.681s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python'
+[3.681s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['python_setup_py']
+[3.681s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python_setup_py'
+[3.686s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['ignore', 'ignore_ament_install']
+[3.687s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ignore'
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ignore_ament_install'
+[3.699s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[3.700s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[3.701s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[3.702s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[3.703s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['ros']
+[3.704s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ros'
+[3.705s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['cmake', 'python']
+[3.706s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'cmake'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'python'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['ignore', 'ignore_ament_install']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'ignore'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'ignore_ament_install'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['ros']
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'ros'
+[3.723s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['cmake', 'python']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'cmake'
+[3.727s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'python'
+[3.729s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[3.730s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[3.735s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['ignore', 'ignore_ament_install']
+[3.736s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'ignore'
+[3.739s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'ignore_ament_install'
+[3.739s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['colcon_pkg']
+[3.740s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'colcon_pkg'
+[3.740s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['colcon_meta']
+[3.740s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'colcon_meta'
+[3.741s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['ros']
+[3.741s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'ros'
+[3.741s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['cmake', 'python']
+[3.741s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'cmake'
+[3.742s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'python'
+[3.742s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extensions ['python_setup_py']
+[3.742s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir) by extension 'python_setup_py'
+[3.743s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['ignore', 'ignore_ament_install']
+[3.744s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'ignore'
+[3.744s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'ignore_ament_install'
+[3.744s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['colcon_pkg']
+[3.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'colcon_pkg'
+[3.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['colcon_meta']
+[3.745s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'colcon_meta'
+[3.746s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['ros']
+[3.746s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'ros'
+[3.755s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['cmake', 'python']
+[3.756s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'cmake'
+[3.756s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'python'
+[3.757s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extensions ['python_setup_py']
+[3.758s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/CMakeFiles/simple_robot.dir/src) by extension 'python_setup_py'
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['ignore', 'ignore_ament_install']
+[3.761s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'ignore'
+[3.762s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'ignore_ament_install'
+[3.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['colcon_pkg']
+[3.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'colcon_pkg'
+[3.764s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['colcon_meta']
+[3.765s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'colcon_meta'
+[3.766s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['ros']
+[3.767s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'ros'
+[3.768s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['cmake', 'python']
+[3.769s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'cmake'
+[3.770s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'python'
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extensions ['python_setup_py']
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing) by extension 'python_setup_py'
+[3.773s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['ignore', 'ignore_ament_install']
+[3.774s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'ignore'
+[3.775s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'ignore_ament_install'
+[3.777s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['colcon_pkg']
+[3.777s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'colcon_pkg'
+[3.778s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['colcon_meta']
+[3.779s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'colcon_meta'
+[3.780s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['ros']
+[3.781s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'ros'
+[3.782s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['cmake', 'python']
+[3.783s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'cmake'
+[3.784s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'python'
+[3.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extensions ['python_setup_py']
+[3.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/20240620-1941) by extension 'python_setup_py'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['ignore', 'ignore_ament_install']
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'ignore'
+[3.793s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'ignore_ament_install'
+[3.794s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['colcon_pkg']
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'colcon_pkg'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['colcon_meta']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'colcon_meta'
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['ros']
+[3.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'ros'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['cmake', 'python']
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'cmake'
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'python'
+[3.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extensions ['python_setup_py']
+[3.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/Testing/Temporary) by extension 'python_setup_py'
+[3.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['ignore', 'ignore_ament_install']
+[3.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'ignore'
+[3.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'ignore_ament_install'
+[3.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['colcon_pkg']
+[3.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'colcon_pkg'
+[3.810s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['colcon_meta']
+[3.811s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'colcon_meta'
+[3.813s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['ros']
+[3.814s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'ros'
+[3.815s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['cmake', 'python']
+[3.816s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'cmake'
+[3.817s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'python'
+[3.818s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extensions ['python_setup_py']
+[3.819s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core) by extension 'python_setup_py'
+[3.821s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['ignore', 'ignore_ament_install']
+[3.823s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'ignore'
+[3.824s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'ignore_ament_install'
+[3.826s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['colcon_pkg']
+[3.827s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'colcon_pkg'
+[3.828s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['colcon_meta']
+[3.829s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'colcon_meta'
+[3.830s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['ros']
+[3.831s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'ros'
+[3.833s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['cmake', 'python']
+[3.834s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'cmake'
+[3.835s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'python'
+[3.836s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extensions ['python_setup_py']
+[3.837s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_core/stamps) by extension 'python_setup_py'
+[3.838s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['ignore', 'ignore_ament_install']
+[3.840s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'ignore'
+[3.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'ignore_ament_install'
+[3.842s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['colcon_pkg']
+[3.843s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'colcon_pkg'
+[3.844s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['colcon_meta']
+[3.845s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'colcon_meta'
+[3.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['ros']
+[3.847s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'ros'
+[3.849s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['cmake', 'python']
+[3.850s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'cmake'
+[3.851s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'python'
+[3.852s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extensions ['python_setup_py']
+[3.853s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_environment_hooks) by extension 'python_setup_py'
+[3.854s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['ignore', 'ignore_ament_install']
+[3.856s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'ignore'
+[3.857s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'ignore_ament_install'
+[3.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['colcon_pkg']
+[3.859s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'colcon_pkg'
+[3.860s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['colcon_meta']
+[3.861s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'colcon_meta'
+[3.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['ros']
+[3.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'ros'
+[3.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['cmake', 'python']
+[3.866s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'cmake'
+[3.867s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'python'
+[3.868s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extensions ['python_setup_py']
+[3.869s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index) by extension 'python_setup_py'
+[3.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['ignore', 'ignore_ament_install']
+[3.872s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'ignore'
+[3.873s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'ignore_ament_install'
+[3.874s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['colcon_pkg']
+[3.875s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'colcon_pkg'
+[3.876s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['colcon_meta']
+[3.877s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'colcon_meta'
+[3.878s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['ros']
+[3.879s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'ros'
+[3.880s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['cmake', 'python']
+[3.881s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'cmake'
+[3.883s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'python'
+[3.884s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extensions ['python_setup_py']
+[3.885s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share) by extension 'python_setup_py'
+[3.889s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['ignore', 'ignore_ament_install']
+[3.891s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'ignore'
+[3.892s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'ignore_ament_install'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['colcon_pkg']
+[3.894s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'colcon_pkg'
+[3.895s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['colcon_meta']
+[3.896s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'colcon_meta'
+[3.897s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['ros']
+[3.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'ros'
+[3.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['cmake', 'python']
+[3.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'cmake'
+[3.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'python'
+[3.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extensions ['python_setup_py']
+[3.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index) by extension 'python_setup_py'
+[3.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['ignore', 'ignore_ament_install']
+[3.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'ignore'
+[3.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'ignore_ament_install'
+[3.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['colcon_pkg']
+[3.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'colcon_pkg'
+[3.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['colcon_meta']
+[3.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'colcon_meta'
+[3.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['ros']
+[3.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'ros'
+[3.908s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['cmake', 'python']
+[3.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'cmake'
+[3.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'python'
+[3.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extensions ['python_setup_py']
+[3.909s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index) by extension 'python_setup_py'
+[3.910s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['ignore', 'ignore_ament_install']
+[3.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ignore'
+[3.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ignore_ament_install'
+[3.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['colcon_pkg']
+[3.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'colcon_pkg'
+[3.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['colcon_meta']
+[3.913s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'colcon_meta'
+[3.914s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['ros']
+[3.914s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'ros'
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['cmake', 'python']
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'cmake'
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'python'
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extensions ['python_setup_py']
+[3.916s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies) by extension 'python_setup_py'
+[3.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['ignore', 'ignore_ament_install']
+[3.918s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ignore'
+[3.918s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ignore_ament_install'
+[3.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['colcon_pkg']
+[3.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'colcon_pkg'
+[3.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['colcon_meta']
+[3.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'colcon_meta'
+[3.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['ros']
+[3.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'ros'
+[3.921s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['cmake', 'python']
+[3.921s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'cmake'
+[3.921s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'python'
+[3.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extensions ['python_setup_py']
+[3.922s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/packages) by extension 'python_setup_py'
+[3.923s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['ignore', 'ignore_ament_install']
+[3.924s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ignore'
+[3.924s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ignore_ament_install'
+[3.925s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['colcon_pkg']
+[3.925s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'colcon_pkg'
+[3.925s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['colcon_meta']
+[3.926s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'colcon_meta'
+[3.926s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['ros']
+[3.926s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'ros'
+[3.927s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['cmake', 'python']
+[3.927s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'cmake'
+[3.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'python'
+[3.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extensions ['python_setup_py']
+[3.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path) by extension 'python_setup_py'
+[3.929s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['ignore', 'ignore_ament_install']
+[3.930s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'ignore'
+[3.930s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'ignore_ament_install'
+[3.931s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['colcon_pkg']
+[3.931s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'colcon_pkg'
+[3.931s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['colcon_meta']
+[3.931s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'colcon_meta'
+[3.932s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['ros']
+[3.932s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'ros'
+[3.933s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['cmake', 'python']
+[3.933s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'cmake'
+[3.933s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'python'
+[3.934s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extensions ['python_setup_py']
+[3.934s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_package_templates) by extension 'python_setup_py'
+[3.935s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['ignore', 'ignore_ament_install']
+[3.935s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'ignore'
+[3.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'ignore_ament_install'
+[3.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['colcon_pkg']
+[3.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'colcon_pkg'
+[3.937s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['colcon_meta']
+[3.937s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'colcon_meta'
+[3.937s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['ros']
+[3.938s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'ros'
+[3.938s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['cmake', 'python']
+[3.938s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'cmake'
+[3.939s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'python'
+[3.939s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extensions ['python_setup_py']
+[3.939s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cmake_uninstall_target) by extension 'python_setup_py'
+[3.940s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['ignore', 'ignore_ament_install']
+[3.941s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'ignore'
+[3.941s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'ignore_ament_install'
+[3.941s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['colcon_pkg']
+[3.942s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'colcon_pkg'
+[3.942s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['colcon_meta']
+[3.942s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'colcon_meta'
+[3.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['ros']
+[3.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'ros'
+[3.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['cmake', 'python']
+[3.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'cmake'
+[3.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'python'
+[3.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extensions ['python_setup_py']
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_cppcheck) by extension 'python_setup_py'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['ignore', 'ignore_ament_install']
+[3.946s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'ignore'
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'ignore_ament_install'
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['colcon_pkg']
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'colcon_pkg'
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['colcon_meta']
+[3.948s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'colcon_meta'
+[3.948s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['ros']
+[3.948s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'ros'
+[3.949s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['cmake', 'python']
+[3.949s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'cmake'
+[3.949s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'python'
+[3.950s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extensions ['python_setup_py']
+[3.950s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_lint_cmake) by extension 'python_setup_py'
+[3.951s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['ignore', 'ignore_ament_install']
+[3.952s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'ignore'
+[3.952s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'ignore_ament_install'
+[3.952s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['colcon_pkg']
+[3.953s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'colcon_pkg'
+[3.953s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['colcon_meta']
+[3.953s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'colcon_meta'
+[3.954s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['ros']
+[3.954s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'ros'
+[3.954s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['cmake', 'python']
+[3.955s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'cmake'
+[3.955s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'python'
+[3.955s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extensions ['python_setup_py']
+[3.956s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_uncrustify) by extension 'python_setup_py'
+[3.956s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['ignore', 'ignore_ament_install']
+[3.957s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'ignore'
+[3.957s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'ignore_ament_install'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['colcon_pkg']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'colcon_pkg'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['colcon_meta']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'colcon_meta'
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['ros']
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'ros'
+[3.960s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['cmake', 'python']
+[3.960s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'cmake'
+[3.960s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'python'
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extensions ['python_setup_py']
+[3.961s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/build/ament_xmllint) by extension 'python_setup_py'
+[3.962s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extensions ['ignore', 'ignore_ament_install']
+[3.962s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extension 'ignore'
+[3.963s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extension 'ignore_ament_install'
+[3.963s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extensions ['colcon_pkg']
+[3.963s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extension 'colcon_pkg'
+[3.964s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extensions ['colcon_meta']
+[3.964s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extension 'colcon_meta'
+[3.964s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extensions ['ros']
+[3.965s] Level 1:colcon.colcon_core.package_identification:_identify(/home/martina/rp_project/robot-programming-project/src/simple_robot) by extension 'ros'
+[3.980s] DEBUG:colcon.colcon_core.package_identification:Package '/home/martina/rp_project/robot-programming-project/src/simple_robot' with type 'ros.ament_cmake' and name 'simple_robot'
+[3.980s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

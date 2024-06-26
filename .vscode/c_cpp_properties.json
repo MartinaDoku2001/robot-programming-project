@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/humble/include/**",
+                "/home/martina/rp_project/robot-programming-project/src/simple_robot/include/**",
+                "/usr/include/**",
+                "/usr/include/eigen3",
+                "${workspaceFolder}/src/simple_robot/include",
+                "${workspaceFolder}/src/simple_robot"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

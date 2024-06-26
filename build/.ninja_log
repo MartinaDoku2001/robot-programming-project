@@ -1,0 +1,8 @@
+# ninja log v5
+0	132	1719431032526420973	CMakeFiles/simple_robot.dir/src/robot.cpp.o	69c425b505f91053
+0	17164	1719431158632104948	CMakeFiles/simple_robot.dir/src/map_utils.cpp.o	a6c960d9dc189450
+17173	17705	1719431159180112408	libsimple_robot.so	71bec9c4fa46e97c
+0	17014	1719433505757934344	src/CMakeFiles/rp_library.dir/map_utils.cpp.o	9719fecfb16e81d6
+40	260	1719433539622418771	src/CMakeFiles/rp_library.dir/robot.cpp.o	e45f1f820122a39c
+261	2110	1719433541466445163	src/librp_library.so	877c1b8e53339c2f
+26	14344	1719433608059399078	test/CMakeFiles/test_map.dir/test_map.cpp.o	dbb47548820ef13e
