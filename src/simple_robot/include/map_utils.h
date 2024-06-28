@@ -1,7 +1,7 @@
 #pragma once
 #include <opencv2/opencv.hpp>
-#include <Eigen/Core>
-#include <Eigen/Geometry>
+#include <eigen3/Eigen/Core>
+#include <eigen3/Eigen/Geometry>
 
 #include "grid.h"
 

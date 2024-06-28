@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/martina/rp_project/robot-programming-project/build",
-  "command": "/usr/bin/g++ -Drp_library_EXPORTS -I/usr/include/eigen3 -g -fPIC -Wall -Wextra -Wpedantic -o src/CMakeFiles/rp_library.dir/map_utils.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp",
+  "command": "/usr/bin/g++ -Drp_library_EXPORTS -I/usr/include/eigen3 -I/home/martina/rp_project/robot-programming-project/src/simple_robot/src -I/home/martina/rp_project/robot-programming-project/src/simple_robot/include -I/usr/local/include/opencv -g -fPIC -Wall -Wextra -Wpedantic -o src/CMakeFiles/rp_library.dir/map_utils.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp",
   "file": "/home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp"
 },
 {
   "directory": "/home/martina/rp_project/robot-programming-project/build",
-  "command": "/usr/bin/g++ -Drp_library_EXPORTS -I/usr/include/eigen3 -g -fPIC -Wall -Wextra -Wpedantic -o src/CMakeFiles/rp_library.dir/robot.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp",
+  "command": "/usr/bin/g++ -Drp_library_EXPORTS -I/usr/include/eigen3 -I/home/martina/rp_project/robot-programming-project/src/simple_robot/src -I/home/martina/rp_project/robot-programming-project/src/simple_robot/include -I/usr/local/include/opencv -g -fPIC -Wall -Wextra -Wpedantic -o src/CMakeFiles/rp_library.dir/robot.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp",
   "file": "/home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp"
 },
 {
   "directory": "/home/martina/rp_project/robot-programming-project/build",
-  "command": "/usr/bin/g++ -I/usr/include/eigen3 -g -Wall -Wextra -Wpedantic -o test/CMakeFiles/test_map.dir/test_map.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_map.cpp",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -I/home/martina/rp_project/robot-programming-project/src/simple_robot/src -I/home/martina/rp_project/robot-programming-project/src/simple_robot/include -I/usr/local/include/opencv -g -Wall -Wextra -Wpedantic -o test/CMakeFiles/test_map.dir/test_map.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_map.cpp",
   "file": "/home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_map.cpp"
 }
 ]

@@ -12,7 +12,7 @@ GridMap::GridMap(int rows, int cols, float resolution) :
     mapping.resize(rows, cols, resolution);
 }
 
-void GridMap::loadFromImage(const char* filename, float resolution) {
+void GridMap::loadFromImage(std::string filename, float resolution) {
     cerr << "Loading [" << filename << "] with resolution " << resolution << endl;
     cv::Mat image = cv::imread(filename);
     if (image.rows == 0) {

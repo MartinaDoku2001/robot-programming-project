@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240628-1506-Experimental"
+	Name="Martina-ThinkPad-X1-Yoga"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="Martina-ThinkPad-X1-Yoga"
+	OSRelease="6.5.0-41-generic"
+	OSVersion="#41~22.04.2-Ubuntu SMP PREEMPT_DYNAMIC Mon Jun  3 11:32:55 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="78"
+	ProcessorCacheSize="4096"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="15840"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="800.01"
+	>
+	<Testing>
+		<StartDateTime>Jun 28 17:22 CEST</StartDateTime>
+		<StartTestTime>1719588127</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 28 17:22 CEST</EndDateTime>
+		<EndTestTime>1719588127</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

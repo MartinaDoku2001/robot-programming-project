@@ -5,16 +5,20 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
+# Find dependencies
 find_package(OpenCV REQUIRED)
 
-# include directories
+# Include directories
 include_directories(/usr/include/eigen3)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# Add subdirectories
 add_subdirectory(src)
-add_subdirectory(include)
 add_subdirectory(test)
 
+# Define the data directory
+set(DATA_DIR "${CMAKE_SOURCE_DIR}/data")
+add_definitions(-DDATA_DIR=\"${DATA_DIR}\")
 
-ament_package()
+# Print the data directory for debugging
+message(STATUS "DATA_DIR: ${DATA_DIR}")
