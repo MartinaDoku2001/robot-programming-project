@@ -6,7 +6,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # Find dependencies
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 4.5.4 REQUIRED)
 
 # Include directories
 include_directories(/usr/include/eigen3)

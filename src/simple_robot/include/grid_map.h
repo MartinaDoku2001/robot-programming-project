@@ -6,13 +6,23 @@
 
 using namespace std;
 
+// grid mapping class
 struct GridMap: public Grid_<uint8_t> {
-    GridMapping mapping;
-    float resolution; //meters * pixel
+  GridMapping gm;
+  float resolution;      // meters*pixel
+  GridMap(int rows, int cols, float resolution);
 
-    GridMap(int rows, int cols, float resolution);
+  // loads a map from an image
+  void loadFromImage(std::string filename, float resolution);
 
-    void loadFromImage(std::string filename, float resolution);// load the map from an image file
+  bool scanRay(Vector2f& hit,
+               const Vector2f& origin,
+               const Vector2f& direction,
+               const float max_range) const;
 
-    void draw(Canvas& canvas) const; // draw the map on a canvas
+  float scanRay(const Vector2f& origin,
+                 const Vector2f& direction,
+                 const float max_range) const;
+    
+  void draw(Canvas& dest) const;
 };

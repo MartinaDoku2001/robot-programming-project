@@ -10,8 +10,8 @@ using namespace std;
 int main() {
     
     std::string imagePath =  std::string(DATA_DIR) + "/map.png";
-    
     float resolution = 0.1;
+    
     GridMap grid_map(0,0, 0.1);
     grid_map.loadFromImage(imagePath, resolution);
     Canvas canvas;
@@ -24,18 +24,20 @@ int main() {
         direction[0]=cos(alpha);
         direction[1]=sin(alpha);
         Vector2f dest;
-        cerr << "origin: " << grid_map.mapping.world2grid(center) << endl;
-        cerr << "endpoint: " << grid_map.mapping.world2grid(dest) << endl;
+        cerr << "origin: " << grid_map.gm.world2grid(center) << endl;
+        cerr << "endpoint: " << grid_map.gm.world2grid(dest) << endl;
         drawLine(canvas,
-                grid_map.mapping.world2grid(center).cast<int>(),
-                grid_map.mapping.world2grid(dest).cast<int>(), 127);
+                grid_map.gm.world2grid(center).cast<int>(),
+                grid_map.gm.world2grid(dest).cast<int>(), 127);
         
         showCanvas(canvas, 0);
         
         alpha+=0.01;
         cerr << "alpha: " << alpha << endl;
     }
-    }
+    return 0;
+}
+
 
 
 
