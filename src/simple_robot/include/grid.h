@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <cmath>
-#include <Eigen/Core>
+#include <eigen3/Eigen/Core>
 
 using Eigen::Vector2f;
 using Eigen::Vector2i;

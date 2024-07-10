@@ -3,27 +3,23 @@
 #include "../include/robot.h"
 
 // Constructor
-Robot::Robot(Position position,  Velocity velocity) {
-    this->position = position;
-    this->velocity = velocity;
+Robot::Robot(float x, float y) : position_(x, y) {}
+
+// Getter
+Eigen::Vector2f Robot::getPosition() const {
+    return position_;
 }
 
-// Destructor
-Robot::~Robot() {
+// Setter
+void Robot::setPosition(float x, float y) {
+    position_[0] = x;
+    position_[1] = y;
 }
 
-// Move the robot
-void Robot::move(Position position) {
-    this->position = position;
-}
-
-// Get the robot's position
-Position Robot::getPosition() {
-    return this->position;
-}
-
-// Get the robot's speed
-Velocity Robot::getVelocity() {
-    return this->velocity;
+// Function to move the robot
+void Robot::step(float angle, float step_size) {
+    // Update the position based on the angle and step size
+    position_[0] += step_size * cos(angle);
+    position_[1] += step_size * sin(angle);
 }
 

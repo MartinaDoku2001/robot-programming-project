@@ -3,6 +3,7 @@ add_library(grid_map SHARED
   grid_map.cpp
   map_utils.cpp
   robot.cpp
+  dmap.cpp
   # Add other source files here
 )
 

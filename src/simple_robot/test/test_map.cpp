@@ -19,24 +19,28 @@ int main() {
     
     float alpha=0;
     while(1) {
-        grid_map.draw(canvas);
-        Vector2f direction;
-        direction[0]=cos(alpha);
-        direction[1]=sin(alpha);
-        Vector2f dest;
-        cerr << "origin: " << grid_map.gm.world2grid(center) << endl;
-        cerr << "endpoint: " << grid_map.gm.world2grid(dest) << endl;
-        drawLine(canvas,
-                grid_map.gm.world2grid(center).cast<int>(),
-                grid_map.gm.world2grid(dest).cast<int>(), 127);
-        
-        showCanvas(canvas, 0);
-        
-        alpha+=0.01;
-        cerr << "alpha: " << alpha << endl;
-    }
-    return 0;
+    grid_map.draw(canvas);
+    Vector2f direction;
+    direction[0]=cos(alpha);
+    direction[1]=sin(alpha);
+    Vector2f dest;
+    bool hit = grid_map.scanRay(dest, center, direction, 100);
+    cerr << "hit: " << hit << endl;
+    cerr << "origin: " << grid_map.gm.world2grid(center) << endl;
+    cerr << "endpoint: " << grid_map.gm.world2grid(dest) << endl;
+    drawLine(canvas,
+             grid_map.gm.world2grid(center).cast<int>(),
+             grid_map.gm.world2grid(dest).cast<int>(), 127);
+    drawCircle(canvas, grid_map.gm.world2grid(center).cast<int>(), 3, 127);
+    
+    showCanvas(canvas, 0);
+    
+    alpha+=0.01;
+    cerr << "alpha: " << alpha << endl;
+  }
 }
+
+
 
 
 

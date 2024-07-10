@@ -1,4 +1,5 @@
 #include "../include/map_utils.h"
+#include "../include/robot.h"
 #include <Eigen/Geometry>
 
 /* code from github Repo: robotprogramming_2023_24*/
@@ -22,6 +23,14 @@ void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color)
     cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color,color,color),1);
 }
 
+void drawRobot(Canvas& dest, const Robot& robot, int radius, uint8_t color) {
+    // Convert robot's position from world coordinates to grid coordinates
+    Eigen::Vector2f robotPosition = robot.getPosition();
+    Vector2i gridPosition(static_cast<int>(robotPosition[0]), static_cast<int>(robotPosition[1]));
+    
+    // Draw the robot as a circle on the canvas
+    drawCircle(dest, gridPosition, radius, color);
+}
 int showCanvas( Canvas& canvas, int timeout_ms) {
     std::cout << "Canvas size: " << canvas.rows << "x" << canvas.cols << std::endl;
     //show the image in a fixed size window size
