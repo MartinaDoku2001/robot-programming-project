@@ -19,22 +19,25 @@ int main() {
     Canvas canvas;
     Robot robot(0.0, 0.0);
 
-    std::cout << "Initial position: (" << robot.getPosition()[0] << ", " << robot.getPosition()[1] << ")" << std::endl;
+    while(1) {
+        grid_map.draw(canvas);
+        
+        
+        //update the robot position
+        float angle = M_PI / 4; // 45 degrees in radians
+        float step_size = 4.0;
 
-    float angle = M_PI / 4; // 45 degrees in radians
-    float step_size = 1.0;
+        robot.step(angle, step_size);
 
-    robot.step(angle, step_size);
+        //print the new position of the robot
+        std::cout << "Robot position: " << robot.getPosition().transpose() << std::endl;
 
-    std::cout << "New position: (" << robot.getPosition()[0] << ", " << robot.getPosition()[1] << ")" << std::endl;
 
-    // Draw the robot on the canvas
-    drawRobot(canvas, robot, 10, 255);
-
-    // Display the canvas
-    cv::imshow("Robot Canvas", canvas);
-    cv::waitKey(0);
-
+        // Draw the robot on the canvas
+        robot.draw(canvas, grid_map, 127, 10);
+    
+        // Display the canvas
+        showCanvas(canvas, 0);
+    }
     return 0;
 }
-

@@ -4,7 +4,6 @@
 #include <eigen3/Eigen/Geometry>
 
 #include "grid.h"
-#include "robot.h"
 
 using Canvas = cv::Mat; // we define the canvas as a cv matrix
 using Eigen::Vector2i;
@@ -16,9 +15,6 @@ void drawGrid(Canvas& canvas, const Grid_<uint8_t>& src);
 void drawLine(Canvas& canvas, const Vector2i& start, const Vector2i& end, uint8_t color);
 
 void drawCircle(Canvas& canvas, const Vector2i& center, int radius, uint8_t color);
-
-void drawRobot(Canvas& dest, const Robot& robot, int radius, uint8_t color);
-
 
 int showCanvas( Canvas& canvas, int timeout_ms);
 

@@ -1,10 +1,19 @@
 # ninja log v5
-24	16208	1720624280213694488	src/CMakeFiles/grid_map.dir/robot.cpp.o	34b52d2388d45961
-29	34006	1720624298009641757	test/CMakeFiles/test_map.dir/test_map.cpp.o	8573fb7bc91e3673
-38285	40375	1720624304365626140	test/test_robot	a3ce5592bfc5b217
-13	35156	1720624299157638813	src/CMakeFiles/grid_map.dir/grid_map.cpp.o	25a8a06f5e7330db
-38284	40376	1720624304353626168	test/test_map	5762b342cf8dba35
-14	37394	1720624301397633227	src/CMakeFiles/grid_map.dir/map_utils.cpp.o	5725e0f90dd2b682
-37394	38284	1720624302289631058	src/libgrid_map.so	3de326b48e6bb0ad
-32	30216	1720624294205651909	test/CMakeFiles/test_robot.dir/test_robot.cpp.o	e3afa0835490951
+12	13637	1720864992733682206	src/CMakeFiles/grid_map.dir/robot.cpp.o	34b52d2388d45961
+16	30908	1720865010010170714	test/CMakeFiles/test_map.dir/test_map.cpp.o	8573fb7bc91e3673
+12933	14520	1720868145925289994	test/test_robot	a3ce5592bfc5b217
+9	29579	1720865008674133544	src/CMakeFiles/grid_map.dir/grid_map.cpp.o	25a8a06f5e7330db
+34407	36458	1720865015542323508	test/test_map	5762b342cf8dba35
+10	33156	1720865012250232790	src/CMakeFiles/grid_map.dir/map_utils.cpp.o	5725e0f90dd2b682
+33157	34407	1720865013506267474	src/libgrid_map.so	3de326b48e6bb0ad
+12	12932	1720868144349265669	test/CMakeFiles/test_robot.dir/test_robot.cpp.o	e3afa0835490951
 16	12764	1720623208668337226	src/CMakeFiles/grid_map.dir/dmap.cpp.o	ab0e1a6cf0daa4f6
+11	24563	1720868850538546442	src/CMakeFiles/grid_map.dir/map_utils.cpp.o	5725e0f90dd2b682
+78	35641	1720869624430548555	test/CMakeFiles/test_map.dir/test_map.cpp.o	8573fb7bc91e3673
+90	36008	1720869624810554812	test/CMakeFiles/test_robot.dir/test_robot.cpp.o	e3afa0835490951
+67	36778	1720869625574567387	src/CMakeFiles/grid_map.dir/robot.cpp.o	34b52d2388d45961
+10	37935	1720869626730586406	src/CMakeFiles/grid_map.dir/grid_map.cpp.o	25a8a06f5e7330db
+60	38047	1720869626834588117	src/CMakeFiles/grid_map.dir/map_utils.cpp.o	5725e0f90dd2b682
+38048	39168	1720869627962606665	src/libgrid_map.so	3de326b48e6bb0ad
+39169	41055	1720869629806636963	test/test_robot	a3ce5592bfc5b217
+39168	41233	1720869630014640380	test/test_map	5762b342cf8dba35
