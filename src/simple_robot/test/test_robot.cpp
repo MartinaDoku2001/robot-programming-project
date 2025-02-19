@@ -18,14 +18,41 @@ int main() {
     grid_map.loadFromImage(imagePath, resolution);
     Canvas canvas;
     Robot robot(0.0, 0.0);
+    int key = -1;
+
+    //update the robot position
+    float angle = M_PI / 4; // 45 degrees in radians
+    float step_size = 4.0;
+
 
     while(1) {
         grid_map.draw(canvas);
         
         
-        //update the robot position
-        float angle = M_PI / 4; // 45 degrees in radians
-        float step_size = 4.0;
+        
+        switch (key) {
+            case 82: case 2490368:  // Up Arrow
+                angle = M_PI/2;
+                std::cout << "Up arrow pressed\n";
+                break;
+            case 84: case 2621440:  // Down Arrow
+                angle = -M_PI/2; 
+                std::cout << "Down arrow pressed\n";
+                break;
+            case 81: case 2424832:  // Left Arrow
+                angle = M_PI ; 
+                std::cout << "Left arrow pressed\n";
+                break;
+            case 83: case 2555904:  // Right Arrow
+                angle = 0; // -90 degrees
+                std::cout << "Right arrow pressed\n";
+                break;
+            case -1:
+                // No key pressed
+                break;
+            default:
+                std::cout << "Other key: " << key << "\n";
+        }
 
         robot.step(angle, step_size);
 
@@ -37,7 +64,10 @@ int main() {
         robot.draw(canvas, grid_map, 127, 10);
     
         // Display the canvas
-        showCanvas(canvas, 0);
+        key = showCanvas(canvas, 0);
+
+        std::cout << "key: " << key << std::endl;
+
     }
     return 0;
 }

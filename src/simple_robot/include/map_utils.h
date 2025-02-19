@@ -1,8 +1,7 @@
 #pragma once
-#include <opencv2/opencv.hpp>
+#include <opencv4/opencv2/opencv.hpp>
 #include <eigen3/Eigen/Core>
 #include <eigen3/Eigen/Geometry>
-
 #include "grid.h"
 
 using Canvas = cv::Mat; // we define the canvas as a cv matrix

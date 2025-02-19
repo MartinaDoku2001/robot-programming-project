@@ -1,5 +1,4 @@
 #include "../include/map_utils.h"
-#include "../include/robot.h"
 #include "../include/grid_map.h"
 #include <iostream>
 #include <Eigen/Geometry>
@@ -25,19 +24,14 @@ void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color)
     cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color,color,color),1);
 }
 
-void drawRobot(Canvas& dest, const Robot& robot, GridMap& grid_map, int radius, uint8_t color) {
-    // Convert robot's position from world coordinates to grid coordinates
-    Eigen::Vector2f robotPosition = robot.getPosition();
-    Vector2i gridPosition=grid_map.gm.world2grid(robot.getPosition()).cast<int>();
-    
-    // Draw the robot as a circle on the canvas
-    drawCircle(dest, gridPosition, radius, color);
-}
+
 int showCanvas( Canvas& canvas, int timeout_ms) {
     std::cout << "Canvas size: " << canvas.rows << "x" << canvas.cols << std::endl;
     //show the image in a fixed size window size
     cv::imshow("Canvas", canvas);
-    
+
+    //make the canvas focused
+    cv::setWindowProperty("Canvas", cv::WND_PROP_TOPMOST, 1);
     
     int key = cv::waitKey(timeout_ms);
     if (key == 27) { //exit on ESC

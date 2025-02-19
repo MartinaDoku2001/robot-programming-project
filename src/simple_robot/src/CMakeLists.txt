@@ -6,7 +6,7 @@ add_library(grid_map SHARED
   dmap.cpp
   # Add other source files here
 )
-
+find_package(OpenCV REQUIRED)
 target_include_directories(grid_map PUBLIC
   ${CMAKE_SOURCE_DIR}/include
   ${OpenCV_INCLUDE_DIRS}
