@@ -1,0 +1,32 @@
+/usr/bin/ld: CMakeFiles/tests.dir/test/test_robot.cpp.o: in function `main':
+test_robot.cpp:(.text+0x0): multiple definition of `main'; CMakeFiles/tests.dir/test/test_map.cpp.o:test_map.cpp:(.text+0x0): first defined here
+/usr/bin/ld: CMakeFiles/tests.dir/test/test_map.cpp.o: in function `main':
+test_map.cpp:(.text+0xe6): undefined reference to `GridMap::GridMap(int, int, float)'
+/usr/bin/ld: test_map.cpp:(.text+0x122): undefined reference to `GridMap::loadFromImage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float)'
+/usr/bin/ld: test_map.cpp:(.text+0x140): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: test_map.cpp:(.text+0x19d): undefined reference to `GridMap::draw(cv::Mat&) const'
+/usr/bin/ld: test_map.cpp:(.text+0x23b): undefined reference to `GridMap::scanRay(Eigen::Matrix<float, 2, 1, 0, 2, 1>&, Eigen::Matrix<float, 2, 1, 0, 2, 1> const&, Eigen::Matrix<float, 2, 1, 0, 2, 1> const&, float) const'
+/usr/bin/ld: test_map.cpp:(.text+0x416): undefined reference to `drawLine(cv::Mat&, Eigen::Matrix<int, 2, 1, 0, 2, 1> const&, Eigen::Matrix<int, 2, 1, 0, 2, 1> const&, unsigned char)'
+/usr/bin/ld: test_map.cpp:(.text+0x48c): undefined reference to `drawCircle(cv::Mat&, Eigen::Matrix<int, 2, 1, 0, 2, 1> const&, int, unsigned char)'
+/usr/bin/ld: test_map.cpp:(.text+0x4a0): undefined reference to `showCanvas(cv::Mat&, int)'
+/usr/bin/ld: test_map.cpp:(.text+0x570): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/tests.dir/test/test_robot.cpp.o: in function `main':
+test_robot.cpp:(.text+0xbb): undefined reference to `GridMap::GridMap(int, int, float)'
+/usr/bin/ld: test_robot.cpp:(.text+0xf7): undefined reference to `GridMap::loadFromImage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float)'
+/usr/bin/ld: test_robot.cpp:(.text+0x115): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: test_robot.cpp:(.text+0x136): undefined reference to `Robot::Robot(float, float)'
+/usr/bin/ld: test_robot.cpp:(.text+0x179): undefined reference to `GridMap::draw(cv::Mat&) const'
+/usr/bin/ld: test_robot.cpp:(.text+0x277): undefined reference to `Robot::step(float, float)'
+/usr/bin/ld: test_robot.cpp:(.text+0x290): undefined reference to `Robot::getPosition() const'
+/usr/bin/ld: test_robot.cpp:(.text+0x2c9): undefined reference to `Robot::getPosition() const'
+/usr/bin/ld: test_robot.cpp:(.text+0x31e): undefined reference to `Robot::getPosition() const'
+/usr/bin/ld: test_robot.cpp:(.text+0x37c): undefined reference to `GridMap::is_colliding(float, float) const'
+/usr/bin/ld: test_robot.cpp:(.text+0x3e6): undefined reference to `Robot::step(float, float)'
+/usr/bin/ld: test_robot.cpp:(.text+0x40e): undefined reference to `Robot::draw(cv::Mat&, GridMap const&, unsigned char, int)'
+/usr/bin/ld: test_robot.cpp:(.text+0x422): undefined reference to `showCanvas(cv::Mat&, int)'
+/usr/bin/ld: test_robot.cpp:(.text+0x494): undefined reference to `cv::Mat::~Mat()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/tests.dir/build.make:113: tests] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:174: CMakeFiles/tests.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:101: all] Error 2

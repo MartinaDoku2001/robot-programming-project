@@ -95,51 +95,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles /home/martina/rp_project/robot-programming-project/build/simple_robot//CMakeFiles/progress.marks
@@ -197,6 +152,106 @@ simple_robot_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_robot_uninstall.dir/build.make CMakeFiles/simple_robot_uninstall.dir/build
 .PHONY : simple_robot_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named grid_map
+
+# Build rule for target.
+grid_map: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 grid_map
+.PHONY : grid_map
+
+# fast build rule for target.
+grid_map/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/build
+.PHONY : grid_map/fast
+
+#=============================================================================
+# Target rules for targets named test_map
+
+# Build rule for target.
+test_map: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_map
+.PHONY : test_map
+
+# fast build rule for target.
+test_map/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_map.dir/build.make test/CMakeFiles/test_map.dir/build
+.PHONY : test_map/fast
+
+#=============================================================================
+# Target rules for targets named test_robot
+
+# Build rule for target.
+test_robot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_robot
+.PHONY : test_robot
+
+# fast build rule for target.
+test_robot/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_robot.dir/build.make test/CMakeFiles/test_robot.dir/build
+.PHONY : test_robot/fast
+
+test/test_map.o: test/test_map.cpp.o
+.PHONY : test/test_map.o
+
+# target to build an object file
+test/test_map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.o
+.PHONY : test/test_map.cpp.o
+
+test/test_map.i: test/test_map.cpp.i
+.PHONY : test/test_map.i
+
+# target to preprocess a source file
+test/test_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.i
+.PHONY : test/test_map.cpp.i
+
+test/test_map.s: test/test_map.cpp.s
+.PHONY : test/test_map.s
+
+# target to generate assembly for a file
+test/test_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.s
+.PHONY : test/test_map.cpp.s
+
+test/test_robot.o: test/test_robot.cpp.o
+.PHONY : test/test_robot.o
+
+# target to build an object file
+test/test_robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.o
+.PHONY : test/test_robot.cpp.o
+
+test/test_robot.i: test/test_robot.cpp.i
+.PHONY : test/test_robot.i
+
+# target to preprocess a source file
+test/test_robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.i
+.PHONY : test/test_robot.cpp.i
+
+test/test_robot.s: test/test_robot.cpp.s
+.PHONY : test/test_robot.s
+
+# target to generate assembly for a file
+test/test_robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.s
+.PHONY : test/test_robot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -204,14 +259,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... simple_robot_uninstall"
 	@echo "... uninstall"
+	@echo "... grid_map"
+	@echo "... test_map"
+	@echo "... test_robot"
+	@echo "... tests"
+	@echo "... test/test_map.o"
+	@echo "... test/test_map.i"
+	@echo "... test/test_map.s"
+	@echo "... test/test_robot.o"
+	@echo "... test/test_robot.i"
+	@echo "... test/test_robot.s"
 .PHONY : help
 
 
