@@ -14,11 +14,13 @@ The program enables seamless control of a mobile robot through ROS2. Users can s
 
 The application includes a map visualization feature, allowing users to view the environment and the robot's spatial awareness. This is particularly useful for mapping and navigation tasks.
 
+## Demo
+
+![Robot Control Demo](assets/robot_in_map.gif)
+
+
 ### 3. Laser Scans
 
 Laser scans are crucial for detecting obstacles and obstacles avoidance. The program visualizes laser scan data in a clear and informative manner, aiding users in understanding the robot's perception of its surroundings.
 
-### 4. Mobile Bases
-
-Users can monitor and manage mobile bases through the program. This feature provides insights into the robot's mobility and helps in coordinating movements effectively.
 
