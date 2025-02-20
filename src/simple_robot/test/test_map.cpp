@@ -8,7 +8,8 @@
 using namespace std;
 
 int main() {
-    
+    std::cout << "Starting the map testing" << std::endl;
+
     std::string imagePath =  std::string(DATA_DIR) + "/map.png";
     float resolution = 0.1;
     
@@ -24,7 +25,7 @@ int main() {
     direction[0]=cos(alpha);
     direction[1]=sin(alpha);
     Vector2f dest;
-    bool hit = grid_map.scanRay(dest, center, direction, 100);
+    bool hit = grid_map.scanRay(dest, center, direction, 30);
     cerr << "hit: " << hit << endl;
     cerr << "origin: " << grid_map.gm.world2grid(center) << endl;
     cerr << "endpoint: " << grid_map.gm.world2grid(dest) << endl;

@@ -74,4 +74,26 @@ void GridMap::draw(Canvas& dest) const {
   drawGrid(dest, *this);
 }
 
+bool GridMap::is_colliding(float x, float y) const {
+  //x and y are the robot position in world coordinates
+
+  // Convert the (x, y) world coordinates to grid coordinates
+  Vector2f point(x, y);
+  Vector2f grid_point = gm.world2grid(point);
+
+  // Extract row and column from the grid point
+  int r = grid_point.y();
+  int c = grid_point.x();
+
+  // check if the cell value (or any cell value in the vicinity) is below the obstacle threshold (127)
+  for (int rr = r - 3; rr <= r + 3; ++rr) {
+    for (int cc = c - 3; cc <= c + 3; ++cc) {
+      if (at(rr, cc) < 127)
+        return true;
+    }
+  }
+
+  return false;
+}
+
 

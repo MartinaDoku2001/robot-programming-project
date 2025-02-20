@@ -30,4 +30,3 @@ log "Running the test executable..."
 
 log "Done!"
 
-

@@ -74,4 +74,19 @@ struct GridMap: public Grid_<uint8_t> {
     * @return void
     */
   void draw(Canvas& dest) const;
+
+  /**
+  * @brief Checks if a point is colliding with an obstacle.
+  * 
+  * This function checks if a point is colliding with an obstacle.
+  * 
+  * @param x The x-coordinate of the point.
+  * 
+  * @param y The y-coordinate of the point.
+  * 
+  * @return True if the point is colliding with an obstacle, false otherwise.
+  * 
+  */
+  bool is_colliding(float x, float y) const;
 };
+
