@@ -1,0 +1,106 @@
+[0.187s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'simple_robot', '--cmake-clean-cache', '--event-handlers', 'console_direct+']
+[0.187s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['simple_robot'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71160bc699c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71160bc68fd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71160bc68fd0>>, mixin_verb=('build',))
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.501s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/martina/rp_project/robot-programming-project/src/simple_robot'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.528s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'simple_robot'
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.587s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/martina/rp_project/robot-programming-project/install
+[0.590s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_target' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_clean_cache' from command line to 'True'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'simple_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.670s] DEBUG:colcon.colcon_core.verb:Building package 'simple_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot', 'merge_install': False, 'path': '/home/martina/rp_project/robot-programming-project/src/simple_robot', 'symlink_install': False, 'test_result_base': None}
+[0.670s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.672s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.672s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/martina/rp_project/robot-programming-project/src/simple_robot' with build type 'ament_cmake'
+[0.673s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/martina/rp_project/robot-programming-project/src/simple_robot'
+[0.677s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.678s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.678s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[3.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[3.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[34.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[34.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[34.476s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simple_robot)
+[34.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[34.491s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot' for CMake module files
+[34.493s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot' for CMake config files
+[34.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('simple_robot', 'cmake_prefix_path')
+[34.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.ps1'
+[34.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.dsv'
+[34.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.sh'
+[34.502s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib'
+[34.503s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/bin'
+[34.503s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/pkgconfig/simple_robot.pc'
+[34.504s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/python3.10/site-packages'
+[34.505s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/bin'
+[34.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.ps1'
+[34.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.dsv'
+[34.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.sh'
+[34.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.bash'
+[34.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.zsh'
+[34.518s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/colcon-core/packages/simple_robot)
+[34.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simple_robot)
+[34.520s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot' for CMake module files
+[34.521s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot' for CMake config files
+[34.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('simple_robot', 'cmake_prefix_path')
+[34.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.ps1'
+[34.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.dsv'
+[34.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/hook/cmake_prefix_path.sh'
+[34.525s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib'
+[34.526s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/bin'
+[34.526s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/pkgconfig/simple_robot.pc'
+[34.527s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/python3.10/site-packages'
+[34.528s] Level 1:colcon.colcon_core.environment:checking '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/bin'
+[34.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.ps1'
+[34.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.dsv'
+[34.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.sh'
+[34.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.bash'
+[34.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.zsh'
+[34.536s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/colcon-core/packages/simple_robot)
+[34.536s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.538s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.538s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.538s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[34.561s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[34.562s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[34.562s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[34.593s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[34.594s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/local_setup.ps1'
+[34.598s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/_local_setup_util_ps1.py'
+[34.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/setup.ps1'
+[34.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/local_setup.sh'
+[34.606s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/_local_setup_util_sh.py'
+[34.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/setup.sh'
+[34.610s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/local_setup.bash'
+[34.611s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/setup.bash'
+[34.614s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/local_setup.zsh'
+[34.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/martina/rp_project/robot-programming-project/src/simple_robot/install/setup.zsh'

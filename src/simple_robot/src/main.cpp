@@ -24,26 +24,32 @@ public:
     }
 
     void run() {
-        while (rclcpp::ok()) {
-            std::cout << "Use arrow keys to move (WASD for alternative controls), Q to quit:" << std::endl;
+        std::cout << "Use arrow keys to move (WASD for alternative controls), Q to quit:" << std::endl;
+        while (rclcpp::ok()) {  // ✅ Keep looping as long as ROS is running
             char key;
             std::cin >> key;
-
+    
             float angle = 0.0;
             switch (key) {
                 case 'w': case 'W': angle = M_PI / 2; break;
                 case 's': case 'S': angle = -M_PI / 2; break;
                 case 'a': case 'A': angle = M_PI; break;
                 case 'd': case 'D': angle = 0; break;
-                case 'q': case 'Q': return;
-                default: std::cout << "Invalid key." << std::endl; continue;
+                case 'q': case 'Q': 
+                    std::cout << "Quitting control..." << std::endl;
+                    return;  // Exit loop when 'Q' is pressed
+                default: 
+                    std::cout << "Invalid key." << std::endl; 
+                    continue;  // Skip publishing if input is invalid
             }
+    
             std::cout << "Publishing angle: " << angle << std::endl;
             auto msg = std_msgs::msg::Float32();
             msg.data = angle;
             angle_pub_->publish(msg);
         }
     }
+    
 
 private:
     void position_callback(const geometry_msgs::msg::Pose2D::SharedPtr msg) {
@@ -76,48 +82,66 @@ private:
         auto position = robot_.getPosition();
         position_msg.x = position[0];
         position_msg.y = position[1];
+        std::cout << "Publishing position: (" << position_msg.x << ", " << position_msg.y << ")" << std::endl;
         position_pub_->publish(position_msg);
     }
 
-    Robot robot_;
+    Robot robot_ = Robot(-40.0, -27.0);
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr angle_sub_;
     rclcpp::Publisher<geometry_msgs::msg::Pose2D>::SharedPtr position_pub_;
 };
 
 
 class MapNode : public rclcpp::Node {
-public:
-MapNode() : Node("map_node"), grid_map_(100, 100, 0.1) {
+    public:
+        MapNode() : Node("map_node"), grid_map_(100, 100, 0.1) {
+            // Load the map
+            std::string imagePath = std::string(DATA_DIR) + "/map.png";
+            grid_map_.loadFromImage(imagePath, 0.1);
     
-    // Assuming you have the image path and resolution
-    std::string imagePath =  std::string(DATA_DIR) + "/map.png";
-    grid_map_.loadFromImage(imagePath, 0.1);  // Load map from image with the specified resolution
-
-    map_pub_ = this->create_publisher<std_msgs::msg::Float32>("/map", 10);
-    position_sub_ = this->create_subscription<geometry_msgs::msg::Pose2D>(
-        "/robot_position", 10,
-        std::bind(&MapNode::position_callback, this, std::placeholders::_1));
-}
-
-
-private:
-    void position_callback(const geometry_msgs::msg::Pose2D::SharedPtr msg) {
-        std::cout << "Received position: (" << msg->x << ", " << msg->y << ")" << std::endl;
-
-        // Check if the robot is colliding with an obstacle
-        bool hit = grid_map_.is_colliding(msg->x, msg->y);
-        std::cout << "Robot is colliding: " << (hit ? "true" : "false") << std::endl;
-
-        // Publish the map
-        auto map_msg = std_msgs::msg::Float32();
-        map_msg.data = hit ? 1.0 : 0.0;
-        map_pub_->publish(map_msg);
-    }
-
-    GridMap grid_map_;
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr map_pub_;
-    rclcpp::Subscription<geometry_msgs::msg::Pose2D>::SharedPtr position_sub_;
-};
+            // Create publishers and subscribers
+            map_pub_ = this->create_publisher<std_msgs::msg::Float32>("/map", 10);
+            position_sub_ = this->create_subscription<geometry_msgs::msg::Pose2D>(
+                "/robot_position", 10,
+                std::bind(&MapNode::position_callback, this, std::placeholders::_1));
+    
+            // Draw the initial map
+            Canvas canvas;
+            grid_map_.draw(canvas);
+            showCanvas(canvas, 0);
+        }
+    
+    private:
+        void position_callback(const geometry_msgs::msg::Pose2D::SharedPtr msg) {
+            std::cout << "Received position: (" << msg->x << ", " << msg->y << ")" << std::endl;
+    
+            // Check if the robot is colliding with an obstacle
+            bool hit = grid_map_.is_colliding(msg->x, msg->y);
+            std::cout << "Robot is colliding: " << (hit ? "true" : "false") << std::endl;
+    
+            // Publish the map state
+            auto map_msg = std_msgs::msg::Float32();
+            map_msg.data = hit ? 1.0 : 0.0;
+            map_pub_->publish(map_msg);
+    
+            // Draw the updated map with the robot
+            Canvas canvas;
+            grid_map_.draw(canvas);
+    
+        
+            robot_.setPosition(msg->x, msg->y);
+            robot_.draw(canvas, grid_map_, 127, 5);
+    
+            showCanvas(canvas, 0);
+        }
+    
+        GridMap grid_map_;
+        //initialize the robot at position (-40, -27)
+        Robot robot_ = Robot(-40.0, -27.0);
+        rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr map_pub_;
+        rclcpp::Subscription<geometry_msgs::msg::Pose2D>::SharedPtr position_sub_;
+    };
+    
 
 
 int main(int argc, char **argv) {
@@ -131,9 +155,14 @@ int main(int argc, char **argv) {
     // Run control loop for keyboard node
     std::thread control_thread([&]() { control_node->run(); });
 
-    // Spin the nodes
-    rclcpp::spin(robot_node);
-    rclcpp::spin(map_node);
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(robot_node);
+    executor.add_node(map_node);
+    
+    std::thread spin_thread([&]() { executor.spin(); });
+    control_thread.join();
+    spin_thread.join();
+    
 
     control_thread.join();  // Ensure the control node thread finishes before shutting down
 
