@@ -16,12 +16,3 @@
 /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src/CMakeFiles/install.dir
 /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src/CMakeFiles/install/local.dir
 /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src/CMakeFiles/install/strip.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/test_map.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/test_robot.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/test.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/edit_cache.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/rebuild_cache.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/list_install_components.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/install.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/install/local.dir
-/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/CMakeFiles/install/strip.dir

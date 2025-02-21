@@ -1,0 +1,19 @@
+/usr/bin/ld: CMakeFiles/robot_node.dir/src/robot.cpp.o: in function `Robot::draw(cv::Mat&, GridMap const&, unsigned char, int)':
+robot.cpp:(.text+0x1f3): undefined reference to `drawCircle(cv::Mat&, Eigen::Matrix<int, 2, 1, 0, 2, 1> const&, int, unsigned char)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/robot_node.dir/build.make:237: robot_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/robot_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: CMakeFiles/robot_map_node.dir/src/main.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<geometry_msgs::msg::Pose2D_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()':
+main.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg7Pose2D_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg7Pose2D_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()'
+/usr/bin/ld: CMakeFiles/robot_map_node.dir/src/main.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<std_msgs::msg::Float32_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()':
+main.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8std_msgs3msg8Float32_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8std_msgs3msg8Float32_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:269: robot_map_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/robot_map_node.dir/all] Error 2
+/usr/bin/ld: CMakeFiles/grid_map.dir/robot_node.cpp.o: in function `main':
+robot_node.cpp:(.text+0x69): multiple definition of `main'; CMakeFiles/grid_map.dir/main.cpp.o:main.cpp:(.text+0x69): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:285: src/libgrid_map.so] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:228: src/CMakeFiles/grid_map.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

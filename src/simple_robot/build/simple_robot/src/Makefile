@@ -233,6 +233,30 @@ grid_map.cpp.s:
 	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/grid_map.cpp.s
 .PHONY : grid_map.cpp.s
 
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 map_utils.o: map_utils.cpp.o
 .PHONY : map_utils.o
 
@@ -301,6 +325,9 @@ help:
 	@echo "... grid_map.o"
 	@echo "... grid_map.i"
 	@echo "... grid_map.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... map_utils.o"
 	@echo "... map_utils.i"
 	@echo "... map_utils.s"

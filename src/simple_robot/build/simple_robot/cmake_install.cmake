@@ -124,7 +124,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src/cmake_install.cmake")
-  include("/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/test/cmake_install.cmake")
 
 endif()
 

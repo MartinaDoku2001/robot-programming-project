@@ -223,32 +223,6 @@ grid_map/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/build
 .PHONY : grid_map/fast
 
-#=============================================================================
-# Target rules for targets named test_map
-
-# Build rule for target.
-test_map: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_map
-.PHONY : test_map
-
-# fast build rule for target.
-test_map/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_map.dir/build.make test/CMakeFiles/test_map.dir/build
-.PHONY : test_map/fast
-
-#=============================================================================
-# Target rules for targets named test_robot
-
-# Build rule for target.
-test_robot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_robot
-.PHONY : test_robot
-
-# fast build rule for target.
-test_robot/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_robot.dir/build.make test/CMakeFiles/test_robot.dir/build
-.PHONY : test_robot/fast
-
 src/dmap.o: src/dmap.cpp.o
 .PHONY : src/dmap.o
 
@@ -386,8 +360,6 @@ help:
 	@echo "... uninstall"
 	@echo "... grid_map"
 	@echo "... robot_map_node"
-	@echo "... test_map"
-	@echo "... test_robot"
 	@echo "... src/dmap.o"
 	@echo "... src/dmap.i"
 	@echo "... src/dmap.s"

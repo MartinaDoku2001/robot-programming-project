@@ -10,19 +10,51 @@ find_package(OpenCV 4.5.4 REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rosidl_typesupport_cpp REQUIRED)  # Ensure rosidl_typesupport_cpp is found
+find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
-# Include directories
+# Include directories (for OpenCV and Eigen)
 include_directories(/usr/include/eigen3)
 include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(include)
 
+# Include ROS 2 dependencies
+include_directories(${rosidl_typesupport_cpp_INCLUDE_DIRS})
+include_directories(${std_msgs_INCLUDE_DIRS})
+include_directories(${geometry_msgs_INCLUDE_DIRS})
+
 # Add subdirectories
 add_subdirectory(src)
-add_subdirectory(test)
 
-add_executable(robot_map_node  src/grid_map.cpp src/robot.cpp src/dmap.cpp src/map_utils.cpp src/main.cpp)
-ament_target_dependencies(robot_map_node rclcpp Eigen3 OpenCV)
+#add_subdirectory(test)
 
+# Add executable
+add_executable(robot_map_node 
+  src/grid_map.cpp 
+  src/robot.cpp 
+  src/dmap.cpp 
+  src/map_utils.cpp 
+  src/main.cpp
+)
+
+# Link dependencies
+ament_target_dependencies(robot_map_node
+  rclcpp
+  Eigen3
+  OpenCV
+  std_msgs
+  geometry_msgs
+  sensor_msgs
+  nav_msgs
+  rosidl_typesupport_cpp  
+  rosidl_typesupport_fastrtps_cpp  # For FastRTPS
+  rosidl_typesupport_introspection_cpp  # For introspection
+)
+
+# Install targets
 install(TARGETS robot_map_node
   DESTINATION lib/${PROJECT_NAME})
 

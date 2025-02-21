@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/martina/rp_project/robot-programming-project/build/simp
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/tests.dir/all
+all: CMakeFiles/robot_map_node.dir/all
 all: src/all
 all: test/all
 .PHONY : all
@@ -76,7 +76,7 @@ preinstall: test/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/simple_robot_uninstall.dir/clean
-clean: CMakeFiles/tests.dir/clean
+clean: CMakeFiles/robot_map_node.dir/clean
 clean: src/clean
 clean: test/clean
 .PHONY : clean
@@ -166,30 +166,30 @@ CMakeFiles/simple_robot_uninstall.dir/clean:
 .PHONY : CMakeFiles/simple_robot_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tests.dir
+# Target rules for target CMakeFiles/robot_map_node.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=10,11,12 "Built target tests"
-.PHONY : CMakeFiles/tests.dir/all
+CMakeFiles/robot_map_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target robot_map_node"
+.PHONY : CMakeFiles/robot_map_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+CMakeFiles/robot_map_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_map_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles 0
-.PHONY : CMakeFiles/tests.dir/rule
+.PHONY : CMakeFiles/robot_map_node.dir/rule
 
 # Convenience name for target.
-tests: CMakeFiles/tests.dir/rule
-.PHONY : tests
+robot_map_node: CMakeFiles/robot_map_node.dir/rule
+.PHONY : robot_map_node
 
 # clean rule for target.
-CMakeFiles/tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
-.PHONY : CMakeFiles/tests.dir/clean
+CMakeFiles/robot_map_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/clean
+.PHONY : CMakeFiles/robot_map_node.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/grid_map.dir
@@ -224,7 +224,7 @@ src/CMakeFiles/grid_map.dir/clean:
 test/CMakeFiles/test_map.dir/all: src/CMakeFiles/grid_map.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_map.dir/build.make test/CMakeFiles/test_map.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_map.dir/build.make test/CMakeFiles/test_map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=6,7 "Built target test_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=12,13 "Built target test_map"
 .PHONY : test/CMakeFiles/test_map.dir/all
 
 # Build rule for subdir invocation for target.
@@ -250,7 +250,7 @@ test/CMakeFiles/test_map.dir/clean:
 test/CMakeFiles/test_robot.dir/all: src/CMakeFiles/grid_map.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_robot.dir/build.make test/CMakeFiles/test_robot.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_robot.dir/build.make test/CMakeFiles/test_robot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=8,9 "Built target test_robot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles --progress-num=14,15 "Built target test_robot"
 .PHONY : test/CMakeFiles/test_robot.dir/all
 
 # Build rule for subdir invocation for target.

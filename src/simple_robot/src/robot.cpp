@@ -34,3 +34,4 @@ void Robot::draw(Canvas& canvas, const GridMap& map, uint8_t color, int radius) 
     drawCircle(canvas, map.gm.world2grid(position_).cast<int>(), radius, color);
 }
 
+

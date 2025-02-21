@@ -95,6 +95,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/build/simple_robot/CMakeFiles /home/martina/rp_project/robot-programming-project/build/simple_robot//CMakeFiles/progress.marks
@@ -153,17 +198,17 @@ simple_robot_uninstall/fast:
 .PHONY : simple_robot_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named robot_map_node
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+robot_map_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_map_node
+.PHONY : robot_map_node
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+robot_map_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/build
+.PHONY : robot_map_node/fast
 
 #=============================================================================
 # Target rules for targets named grid_map
@@ -204,53 +249,125 @@ test_robot/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_robot.dir/build.make test/CMakeFiles/test_robot.dir/build
 .PHONY : test_robot/fast
 
-test/test_map.o: test/test_map.cpp.o
-.PHONY : test/test_map.o
+src/dmap.o: src/dmap.cpp.o
+.PHONY : src/dmap.o
 
 # target to build an object file
-test/test_map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.o
-.PHONY : test/test_map.cpp.o
+src/dmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.o
+.PHONY : src/dmap.cpp.o
 
-test/test_map.i: test/test_map.cpp.i
-.PHONY : test/test_map.i
+src/dmap.i: src/dmap.cpp.i
+.PHONY : src/dmap.i
 
 # target to preprocess a source file
-test/test_map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.i
-.PHONY : test/test_map.cpp.i
+src/dmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.i
+.PHONY : src/dmap.cpp.i
 
-test/test_map.s: test/test_map.cpp.s
-.PHONY : test/test_map.s
+src/dmap.s: src/dmap.cpp.s
+.PHONY : src/dmap.s
 
 # target to generate assembly for a file
-test/test_map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_map.cpp.s
-.PHONY : test/test_map.cpp.s
+src/dmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.s
+.PHONY : src/dmap.cpp.s
 
-test/test_robot.o: test/test_robot.cpp.o
-.PHONY : test/test_robot.o
+src/grid_map.o: src/grid_map.cpp.o
+.PHONY : src/grid_map.o
 
 # target to build an object file
-test/test_robot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.o
-.PHONY : test/test_robot.cpp.o
+src/grid_map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/grid_map.cpp.o
+.PHONY : src/grid_map.cpp.o
 
-test/test_robot.i: test/test_robot.cpp.i
-.PHONY : test/test_robot.i
+src/grid_map.i: src/grid_map.cpp.i
+.PHONY : src/grid_map.i
 
 # target to preprocess a source file
-test/test_robot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.i
-.PHONY : test/test_robot.cpp.i
+src/grid_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/grid_map.cpp.i
+.PHONY : src/grid_map.cpp.i
 
-test/test_robot.s: test/test_robot.cpp.s
-.PHONY : test/test_robot.s
+src/grid_map.s: src/grid_map.cpp.s
+.PHONY : src/grid_map.s
 
 # target to generate assembly for a file
-test/test_robot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/test_robot.cpp.s
-.PHONY : test/test_robot.cpp.s
+src/grid_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/grid_map.cpp.s
+.PHONY : src/grid_map.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/map_utils.o: src/map_utils.cpp.o
+.PHONY : src/map_utils.o
+
+# target to build an object file
+src/map_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o
+.PHONY : src/map_utils.cpp.o
+
+src/map_utils.i: src/map_utils.cpp.i
+.PHONY : src/map_utils.i
+
+# target to preprocess a source file
+src/map_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/map_utils.cpp.i
+.PHONY : src/map_utils.cpp.i
+
+src/map_utils.s: src/map_utils.cpp.s
+.PHONY : src/map_utils.s
+
+# target to generate assembly for a file
+src/map_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/map_utils.cpp.s
+.PHONY : src/map_utils.cpp.s
+
+src/robot.o: src/robot.cpp.o
+.PHONY : src/robot.o
+
+# target to build an object file
+src/robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/robot.cpp.o
+.PHONY : src/robot.cpp.o
+
+src/robot.i: src/robot.cpp.i
+.PHONY : src/robot.i
+
+# target to preprocess a source file
+src/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/robot.cpp.i
+.PHONY : src/robot.cpp.i
+
+src/robot.s: src/robot.cpp.s
+.PHONY : src/robot.s
+
+# target to generate assembly for a file
+src/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/robot.cpp.s
+.PHONY : src/robot.cpp.s
 
 # Help Target
 help:
@@ -259,20 +376,33 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... simple_robot_uninstall"
 	@echo "... uninstall"
 	@echo "... grid_map"
+	@echo "... robot_map_node"
 	@echo "... test_map"
 	@echo "... test_robot"
-	@echo "... tests"
-	@echo "... test/test_map.o"
-	@echo "... test/test_map.i"
-	@echo "... test/test_map.s"
-	@echo "... test/test_robot.o"
-	@echo "... test/test_robot.i"
-	@echo "... test/test_robot.s"
+	@echo "... src/dmap.o"
+	@echo "... src/dmap.i"
+	@echo "... src/dmap.s"
+	@echo "... src/grid_map.o"
+	@echo "... src/grid_map.i"
+	@echo "... src/grid_map.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/map_utils.o"
+	@echo "... src/map_utils.i"
+	@echo "... src/map_utils.s"
+	@echo "... src/robot.o"
+	@echo "... src/robot.i"
+	@echo "... src/robot.s"
 .PHONY : help
 
 

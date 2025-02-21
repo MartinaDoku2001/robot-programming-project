@@ -1,0 +1,26 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float32.hpp: No such file or directory
+    3 | #include [01;31m[K"std_msgs/msg/float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:132: src/CMakeFiles/grid_map.dir/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/pose2_d.hpp: No such file or directory
+    3 | #include [01;31m[K"geometry_msgs/msg/pose2_d.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_node.dir/build.make:76: CMakeFiles/robot_node.dir/src/robot_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/robot_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float32.hpp: No such file or directory
+    3 | #include [01;31m[K"std_msgs/msg/float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:202: CMakeFiles/robot_map_node.dir/all] Error 2
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float32.hpp: No such file or directory
+    2 | #include [01;31m[K"std_msgs/msg/float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:146: src/CMakeFiles/grid_map.dir/robot_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:228: src/CMakeFiles/grid_map.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

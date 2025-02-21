@@ -1,0 +1,81 @@
+[0.021s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[0.151s] -- The C compiler identification is GNU 11.4.0
+[0.276s] -- The CXX compiler identification is GNU 11.4.0
+[0.305s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.467s] -- Detecting CXX compiler ABI info
+[0.664s] -- Detecting CXX compiler ABI info - done
+[0.700s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.700s] -- Detecting CXX compile features
+[0.704s] -- Detecting CXX compile features - done
+[0.732s] -- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") 
+[0.737s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.027s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.174s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.249s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.257s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.275s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.305s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.347s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.436s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.440s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.644s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.692s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.772s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.786s] -- Looking for pthread.h
+[1.924s] -- Looking for pthread.h - found
+[1.924s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.075s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.077s] -- Found Threads: TRUE  
+[2.186s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.215s] -- Found OpenCV: /usr (found version "4.5.4") 
+[2.331s] -- DATA_DIR: /home/martina/rp_project/robot-programming-project/src/simple_robot/data
+[2.331s] -- Configuring done
+[2.392s] -- Generating done
+[2.411s] -- Build files have been written to: /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[2.434s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[2.440s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[2.544s] [35m[1mConsolidate compiler generated dependencies of target robot_map_node[0m
+[2.547s] [35m[1mConsolidate compiler generated dependencies of target grid_map[0m
+[2.619s] [  5%] [32mBuilding CXX object CMakeFiles/robot_map_node.dir/src/robot.cpp.o[0m
+[2.624s] [ 11%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/robot.cpp.o[0m
+[3.392s] [ 17%] [32m[1mLinking CXX shared library libgrid_map.so[0m
+[3.462s] [ 23%] [32m[1mLinking CXX executable robot_map_node[0m
+[4.725s] [ 52%] Built target grid_map
+[4.763s] [35m[1mConsolidate compiler generated dependencies of target test_map[0m
+[4.764s] [35m[1mConsolidate compiler generated dependencies of target test_robot[0m
+[4.822s] [ 58%] [32mBuilding CXX object test/CMakeFiles/test_map.dir/test_map.cpp.o[0m
+[4.835s] [ 64%] [32mBuilding CXX object test/CMakeFiles/test_robot.dir/test_robot.cpp.o[0m
+[5.262s] /usr/bin/ld: CMakeFiles/robot_map_node.dir/src/main.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<geometry_msgs::msg::Pose2D_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()':
+[5.263s] main.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg7Pose2D_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg7Pose2D_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()'
+[5.273s] /usr/bin/ld: CMakeFiles/robot_map_node.dir/src/main.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<std_msgs::msg::Float32_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()':
+[5.277s] main.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN8std_msgs3msg8Float32_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN8std_msgs3msg8Float32_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()'
+[5.432s] collect2: error: ld returned 1 exit status
+[5.445s] gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:269: robot_map_node] Error 1
+[5.446s] gmake[1]: *** [CMakeFiles/Makefile2:174: CMakeFiles/robot_map_node.dir/all] Error 2
+[5.446s] gmake[1]: *** Waiting for unfinished jobs....
+[6.068s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_robot.cpp:9:[m[K [01;35m[Kwarning: [m[K"DATA_DIR" redefined
+[6.068s]     9 | #define DATA_DIR "/home/martina/rp_project/robot-programming-project/src/simple_robot/data"
+[6.069s]       | 
+[6.069s] [01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[6.108s] [ 70%] [32m[1mLinking CXX executable test_robot[0m
+[6.131s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_map.cpp:7:[m[K [01;35m[Kwarning: [m[K"DATA_DIR" redefined
+[6.132s]     7 | #define DATA_DIR "/home/martina/rp_project/robot-programming-project/src/simple_robot/data"
+[6.132s]       | 
+[6.133s] [01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[6.208s] [ 76%] [32m[1mLinking CXX executable test_map[0m
+[7.539s] /usr/bin/ld: ../src/libgrid_map.so: undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()'
+[7.541s] /usr/bin/ld: ../src/libgrid_map.so: undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()'
+[7.559s] /usr/bin/ld: ../src/libgrid_map.so: undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose2D_<std::allocator<void> > >()'
+[7.561s] /usr/bin/ld: ../src/libgrid_map.so: undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<std_msgs::msg::Float32_<std::allocator<void> > >()'
+[7.599s] collect2: error: ld returned 1 exit status
+[7.604s] gmake[2]: *** [test/CMakeFiles/test_map.dir/build.make:206: test/test_map] Error 1
+[7.606s] gmake[1]: *** [CMakeFiles/Makefile2:226: test/CMakeFiles/test_map.dir/all] Error 2
+[7.623s] collect2: error: ld returned 1 exit status
+[7.627s] gmake[2]: *** [test/CMakeFiles/test_robot.dir/build.make:206: test/test_robot] Error 1
+[7.627s] gmake[1]: *** [CMakeFiles/Makefile2:252: test/CMakeFiles/test_robot.dir/all] Error 2
+[7.628s] gmake: *** [Makefile:146: all] Error 2
+[7.638s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4

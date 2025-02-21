@@ -1,0 +1,7 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float32.hpp: No such file or directory
+    3 | #include [01;31m[K"std_msgs/msg/float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:174: CMakeFiles/robot_map_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

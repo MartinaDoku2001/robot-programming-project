@@ -1,0 +1,8 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_robot.cpp:9:[m[K [01;35m[Kwarning: [m[K"DATA_DIR" redefined
+    9 | #define DATA_DIR "/home/martina/rp_project/robot-programming-project/src/simple_robot/data"
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/test/test_map.cpp:7:[m[K [01;35m[Kwarning: [m[K"DATA_DIR" redefined
+    7 | #define DATA_DIR "/home/martina/rp_project/robot-programming-project/src/simple_robot/data"
+      | 
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition

@@ -1,0 +1,36 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:88:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGridMap::GridMap()[m[K’
+   88 |     MapNode() : Node("map_node"[01;31m[K)[m[K {
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:8[m[K:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:20:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(int, int, float)[m[K’
+   20 |   [01;36m[KGridMap[m[K(int rows, int cols, float resolution);
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:20:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(const GridMap&)[m[K’
+   17 | struct [01;36m[KGridMap[m[K: public Grid_<uint8_t> {
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(GridMap&&)[m[K’
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/robot_map_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:88:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGridMap::GridMap()[m[K’
+   88 |     MapNode() : Node("map_node"[01;31m[K)[m[K {
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:8[m[K:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:20:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(int, int, float)[m[K’
+   20 |   [01;36m[KGridMap[m[K(int rows, int cols, float resolution);
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:20:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(const GridMap&)[m[K’
+   17 | struct [01;36m[KGridMap[m[K: public Grid_<uint8_t> {
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGridMap::GridMap(GridMap&&)[m[K’
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/../include/grid_map.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:132: src/CMakeFiles/grid_map.dir/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:180: src/CMakeFiles/grid_map.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
