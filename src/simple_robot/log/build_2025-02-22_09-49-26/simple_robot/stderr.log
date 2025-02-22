@@ -1,0 +1,16 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:170:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kanvas_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcanvas_timer_[m[K’?
+  170 |         [01;31m[Kanvas_timer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[Kcanvas_timer_[m[K
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:132: src/CMakeFiles/grid_map.dir/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:180: src/CMakeFiles/grid_map.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:170:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kanvas_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcanvas_timer_[m[K’?
+  170 |         [01;31m[Kanvas_timer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[Kcanvas_timer_[m[K
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/robot_map_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

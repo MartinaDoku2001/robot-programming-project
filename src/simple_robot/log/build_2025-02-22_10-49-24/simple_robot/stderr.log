@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/robot_map_node.dir/src/main.cpp.o: in function `MapNode::MapNode()':
+main.cpp:(.text._ZN7MapNodeC2Ev[_ZN7MapNodeC5Ev]+0x978): undefined reference to `closeCanvas(cv::Mat&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:301: robot_map_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/robot_map_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

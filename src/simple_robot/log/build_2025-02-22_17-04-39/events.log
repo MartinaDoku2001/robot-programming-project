@@ -1,0 +1,737 @@
+[0.000000] (-) TimerEvent: {}
+[0.000228] (simple_robot) JobQueued: {'identifier': 'simple_robot', 'dependencies': OrderedDict()}
+[0.000297] (simple_robot) JobStarted: {'identifier': 'simple_robot'}
+[0.041502] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'cmake'}
+[0.041905] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/martina/rp_project/robot-programming-project/src/simple_robot', '-DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '887'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1152'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3260'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:11413'), ('_P9K_SSH_TTY', '/dev/pts/2'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1105,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1105'), ('INVOCATION_ID', 'abb78b4b018940349bd4da4c8fed9753'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.L52E22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'f672ca6a-f6db-4411-8134-b3ad71667d44'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/2'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/2'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[0.099399] (-) TimerEvent: {}
+[0.199904] (-) TimerEvent: {}
+[0.301508] (-) TimerEvent: {}
+[0.312381] (simple_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.401643] (-) TimerEvent: {}
+[0.502381] (-) TimerEvent: {}
+[0.564493] (simple_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.602879] (-) TimerEvent: {}
+[0.609772] (simple_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.703004] (-) TimerEvent: {}
+[0.805461] (-) TimerEvent: {}
+[0.837400] (simple_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.887182] (simple_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.887627] (simple_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.887896] (simple_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.901361] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.906603] (-) TimerEvent: {}
+[1.007325] (-) TimerEvent: {}
+[1.109509] (-) TimerEvent: {}
+[1.211564] (-) TimerEvent: {}
+[1.226803] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.257349] (simple_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[1.259183] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.261672] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.293923] (simple_robot) StdoutLine: {'line': b'-- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") \n'}
+[1.297687] (simple_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.312148] (-) TimerEvent: {}
+[1.412570] (-) TimerEvent: {}
+[1.513659] (-) TimerEvent: {}
+[1.615346] (-) TimerEvent: {}
+[1.717827] (-) TimerEvent: {}
+[1.771403] (simple_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.817969] (-) TimerEvent: {}
+[1.918520] (-) TimerEvent: {}
+[2.021536] (-) TimerEvent: {}
+[2.104602] (simple_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.121680] (-) TimerEvent: {}
+[2.210413] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.222710] (-) TimerEvent: {}
+[2.223547] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.240013] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.270087] (simple_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.310224] (simple_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.324844] (-) TimerEvent: {}
+[2.416195] (simple_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.422878] (simple_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.425578] (-) TimerEvent: {}
+[2.528150] (-) TimerEvent: {}
+[2.629890] (-) TimerEvent: {}
+[2.731456] (-) TimerEvent: {}
+[2.820315] (simple_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.833377] (-) TimerEvent: {}
+[2.919454] (simple_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.933490] (-) TimerEvent: {}
+[3.034146] (-) TimerEvent: {}
+[3.039552] (simple_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.064462] (simple_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.134296] (-) TimerEvent: {}
+[3.235389] (-) TimerEvent: {}
+[3.323817] (simple_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.324475] (simple_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.337365] (-) TimerEvent: {}
+[3.437859] (-) TimerEvent: {}
+[3.540074] (-) TimerEvent: {}
+[3.602374] (simple_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.606953] (simple_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.642359] (-) TimerEvent: {}
+[3.742781] (-) TimerEvent: {}
+[3.766247] (simple_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.817392] (simple_robot) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.842912] (-) TimerEvent: {}
+[3.876661] (simple_robot) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.937248] (simple_robot) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[3.943077] (-) TimerEvent: {}
+[4.047540] (-) TimerEvent: {}
+[4.152609] (-) TimerEvent: {}
+[4.154379] (simple_robot) StdoutLine: {'line': b'-- DATA_DIR: /home/martina/rp_project/robot-programming-project/src/simple_robot/data\n'}
+[4.155355] (simple_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.219227] (simple_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[4.243860] (simple_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot\n'}
+[4.255363] (-) TimerEvent: {}
+[4.267343] (simple_robot) CommandEnded: {'returncode': 0}
+[4.276719] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'build'}
+[4.276817] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', '--', '-j4', '-l4'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '887'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1152'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3260'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:11413'), ('_P9K_SSH_TTY', '/dev/pts/2'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1105,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1105'), ('INVOCATION_ID', 'abb78b4b018940349bd4da4c8fed9753'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.L52E22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'f672ca6a-f6db-4411-8134-b3ad71667d44'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/2'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/2'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[4.359296] (-) TimerEvent: {}
+[4.439217] (simple_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_map_node\x1b[0m\n'}
+[4.462468] (-) TimerEvent: {}
+[4.519192] (simple_robot) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/robot_map_node.dir/src/main.cpp.o\x1b[0m\n'}
+[4.562588] (-) TimerEvent: {}
+[4.662973] (-) TimerEvent: {}
+[4.763359] (-) TimerEvent: {}
+[4.863729] (-) TimerEvent: {}
+[4.964634] (-) TimerEvent: {}
+[5.066353] (-) TimerEvent: {}
+[5.166797] (-) TimerEvent: {}
+[5.267914] (-) TimerEvent: {}
+[5.368492] (-) TimerEvent: {}
+[5.471003] (-) TimerEvent: {}
+[5.571555] (-) TimerEvent: {}
+[5.674545] (-) TimerEvent: {}
+[5.774989] (-) TimerEvent: {}
+[5.876372] (-) TimerEvent: {}
+[5.977779] (-) TimerEvent: {}
+[6.078196] (-) TimerEvent: {}
+[6.178883] (-) TimerEvent: {}
+[6.280085] (-) TimerEvent: {}
+[6.380867] (-) TimerEvent: {}
+[6.484360] (-) TimerEvent: {}
+[6.584816] (-) TimerEvent: {}
+[6.685578] (-) TimerEvent: {}
+[6.786470] (-) TimerEvent: {}
+[6.889391] (-) TimerEvent: {}
+[6.989844] (-) TimerEvent: {}
+[7.090379] (-) TimerEvent: {}
+[7.193935] (-) TimerEvent: {}
+[7.296375] (-) TimerEvent: {}
+[7.399382] (-) TimerEvent: {}
+[7.499869] (-) TimerEvent: {}
+[7.600475] (-) TimerEvent: {}
+[7.701562] (-) TimerEvent: {}
+[7.802166] (-) TimerEvent: {}
+[7.903126] (-) TimerEvent: {}
+[8.004663] (-) TimerEvent: {}
+[8.105098] (-) TimerEvent: {}
+[8.205488] (-) TimerEvent: {}
+[8.310325] (-) TimerEvent: {}
+[8.410743] (-) TimerEvent: {}
+[8.512622] (-) TimerEvent: {}
+[8.613106] (-) TimerEvent: {}
+[8.713704] (-) TimerEvent: {}
+[8.816747] (-) TimerEvent: {}
+[8.917527] (-) TimerEvent: {}
+[9.018659] (-) TimerEvent: {}
+[9.119755] (-) TimerEvent: {}
+[9.220336] (-) TimerEvent: {}
+[9.321000] (-) TimerEvent: {}
+[9.421430] (-) TimerEvent: {}
+[9.521873] (-) TimerEvent: {}
+[9.622247] (-) TimerEvent: {}
+[9.722654] (-) TimerEvent: {}
+[9.823016] (-) TimerEvent: {}
+[9.923373] (-) TimerEvent: {}
+[10.023699] (-) TimerEvent: {}
+[10.124075] (-) TimerEvent: {}
+[10.224465] (-) TimerEvent: {}
+[10.324851] (-) TimerEvent: {}
+[10.425250] (-) TimerEvent: {}
+[10.525640] (-) TimerEvent: {}
+[10.625975] (-) TimerEvent: {}
+[10.726363] (-) TimerEvent: {}
+[10.826761] (-) TimerEvent: {}
+[10.927307] (-) TimerEvent: {}
+[11.028073] (-) TimerEvent: {}
+[11.128445] (-) TimerEvent: {}
+[11.228818] (-) TimerEvent: {}
+[11.329183] (-) TimerEvent: {}
+[11.429555] (-) TimerEvent: {}
+[11.529956] (-) TimerEvent: {}
+[11.630350] (-) TimerEvent: {}
+[11.730723] (-) TimerEvent: {}
+[11.831095] (-) TimerEvent: {}
+[11.931439] (-) TimerEvent: {}
+[12.031797] (-) TimerEvent: {}
+[12.132154] (-) TimerEvent: {}
+[12.232505] (-) TimerEvent: {}
+[12.332855] (-) TimerEvent: {}
+[12.433219] (-) TimerEvent: {}
+[12.533580] (-) TimerEvent: {}
+[12.633970] (-) TimerEvent: {}
+[12.734355] (-) TimerEvent: {}
+[12.834735] (-) TimerEvent: {}
+[12.935117] (-) TimerEvent: {}
+[13.035579] (-) TimerEvent: {}
+[13.135978] (-) TimerEvent: {}
+[13.236362] (-) TimerEvent: {}
+[13.336751] (-) TimerEvent: {}
+[13.437164] (-) TimerEvent: {}
+[13.537546] (-) TimerEvent: {}
+[13.637947] (-) TimerEvent: {}
+[13.738307] (-) TimerEvent: {}
+[13.838696] (-) TimerEvent: {}
+[13.939047] (-) TimerEvent: {}
+[14.039376] (-) TimerEvent: {}
+[14.139767] (-) TimerEvent: {}
+[14.240171] (-) TimerEvent: {}
+[14.340568] (-) TimerEvent: {}
+[14.440936] (-) TimerEvent: {}
+[14.541332] (-) TimerEvent: {}
+[14.641706] (-) TimerEvent: {}
+[14.742120] (-) TimerEvent: {}
+[14.842463] (-) TimerEvent: {}
+[14.942830] (-) TimerEvent: {}
+[15.043180] (-) TimerEvent: {}
+[15.143670] (-) TimerEvent: {}
+[15.244113] (-) TimerEvent: {}
+[15.344430] (-) TimerEvent: {}
+[15.444786] (-) TimerEvent: {}
+[15.545172] (-) TimerEvent: {}
+[15.645484] (-) TimerEvent: {}
+[15.745833] (-) TimerEvent: {}
+[15.846254] (-) TimerEvent: {}
+[15.946912] (-) TimerEvent: {}
+[16.047265] (-) TimerEvent: {}
+[16.147617] (-) TimerEvent: {}
+[16.247964] (-) TimerEvent: {}
+[16.348314] (-) TimerEvent: {}
+[16.448647] (-) TimerEvent: {}
+[16.548996] (-) TimerEvent: {}
+[16.649348] (-) TimerEvent: {}
+[16.749694] (-) TimerEvent: {}
+[16.850030] (-) TimerEvent: {}
+[16.950377] (-) TimerEvent: {}
+[17.050744] (-) TimerEvent: {}
+[17.151102] (-) TimerEvent: {}
+[17.251688] (-) TimerEvent: {}
+[17.352379] (-) TimerEvent: {}
+[17.452748] (-) TimerEvent: {}
+[17.553116] (-) TimerEvent: {}
+[17.653453] (-) TimerEvent: {}
+[17.753826] (-) TimerEvent: {}
+[17.854221] (-) TimerEvent: {}
+[17.954601] (-) TimerEvent: {}
+[18.055008] (-) TimerEvent: {}
+[18.155490] (-) TimerEvent: {}
+[18.255867] (-) TimerEvent: {}
+[18.356298] (-) TimerEvent: {}
+[18.456699] (-) TimerEvent: {}
+[18.557084] (-) TimerEvent: {}
+[18.657508] (-) TimerEvent: {}
+[18.757873] (-) TimerEvent: {}
+[18.858340] (-) TimerEvent: {}
+[18.958770] (-) TimerEvent: {}
+[19.059140] (-) TimerEvent: {}
+[19.159466] (-) TimerEvent: {}
+[19.259795] (-) TimerEvent: {}
+[19.360134] (-) TimerEvent: {}
+[19.460518] (-) TimerEvent: {}
+[19.560877] (-) TimerEvent: {}
+[19.661296] (-) TimerEvent: {}
+[19.761732] (-) TimerEvent: {}
+[19.862191] (-) TimerEvent: {}
+[19.962639] (-) TimerEvent: {}
+[20.063125] (-) TimerEvent: {}
+[20.163576] (-) TimerEvent: {}
+[20.264046] (-) TimerEvent: {}
+[20.364366] (-) TimerEvent: {}
+[20.464726] (-) TimerEvent: {}
+[20.565088] (-) TimerEvent: {}
+[20.665442] (-) TimerEvent: {}
+[20.765845] (-) TimerEvent: {}
+[20.866247] (-) TimerEvent: {}
+[20.966632] (-) TimerEvent: {}
+[21.067069] (-) TimerEvent: {}
+[21.167373] (-) TimerEvent: {}
+[21.267747] (-) TimerEvent: {}
+[21.368114] (-) TimerEvent: {}
+[21.468471] (-) TimerEvent: {}
+[21.568875] (-) TimerEvent: {}
+[21.669224] (-) TimerEvent: {}
+[21.769567] (-) TimerEvent: {}
+[21.869999] (-) TimerEvent: {}
+[21.970436] (-) TimerEvent: {}
+[22.070826] (-) TimerEvent: {}
+[22.171203] (-) TimerEvent: {}
+[22.271621] (-) TimerEvent: {}
+[22.371982] (-) TimerEvent: {}
+[22.472452] (-) TimerEvent: {}
+[22.572930] (-) TimerEvent: {}
+[22.673384] (-) TimerEvent: {}
+[22.773913] (-) TimerEvent: {}
+[22.874297] (-) TimerEvent: {}
+[22.974637] (-) TimerEvent: {}
+[23.075179] (-) TimerEvent: {}
+[23.175580] (-) TimerEvent: {}
+[23.275934] (-) TimerEvent: {}
+[23.376325] (-) TimerEvent: {}
+[23.476699] (-) TimerEvent: {}
+[23.577060] (-) TimerEvent: {}
+[23.677371] (-) TimerEvent: {}
+[23.777686] (-) TimerEvent: {}
+[23.878088] (-) TimerEvent: {}
+[23.978369] (-) TimerEvent: {}
+[24.078701] (-) TimerEvent: {}
+[24.179020] (-) TimerEvent: {}
+[24.279375] (-) TimerEvent: {}
+[24.379684] (-) TimerEvent: {}
+[24.480006] (-) TimerEvent: {}
+[24.580333] (-) TimerEvent: {}
+[24.680650] (-) TimerEvent: {}
+[24.780975] (-) TimerEvent: {}
+[24.881331] (-) TimerEvent: {}
+[24.981624] (-) TimerEvent: {}
+[25.081968] (-) TimerEvent: {}
+[25.182303] (-) TimerEvent: {}
+[25.282635] (-) TimerEvent: {}
+[25.382987] (-) TimerEvent: {}
+[25.483407] (-) TimerEvent: {}
+[25.583717] (-) TimerEvent: {}
+[25.686347] (-) TimerEvent: {}
+[25.789347] (-) TimerEvent: {}
+[25.889739] (-) TimerEvent: {}
+[25.990114] (-) TimerEvent: {}
+[26.090729] (-) TimerEvent: {}
+[26.191128] (-) TimerEvent: {}
+[26.291498] (-) TimerEvent: {}
+[26.391887] (-) TimerEvent: {}
+[26.492315] (-) TimerEvent: {}
+[26.592712] (-) TimerEvent: {}
+[26.693126] (-) TimerEvent: {}
+[26.793422] (-) TimerEvent: {}
+[26.893740] (-) TimerEvent: {}
+[26.994064] (-) TimerEvent: {}
+[27.094384] (-) TimerEvent: {}
+[27.194703] (-) TimerEvent: {}
+[27.295031] (-) TimerEvent: {}
+[27.395350] (-) TimerEvent: {}
+[27.495662] (-) TimerEvent: {}
+[27.596004] (-) TimerEvent: {}
+[27.696349] (-) TimerEvent: {}
+[27.796664] (-) TimerEvent: {}
+[27.896966] (-) TimerEvent: {}
+[27.997378] (-) TimerEvent: {}
+[28.097697] (-) TimerEvent: {}
+[28.198024] (-) TimerEvent: {}
+[28.298347] (-) TimerEvent: {}
+[28.398654] (-) TimerEvent: {}
+[28.498983] (-) TimerEvent: {}
+[28.599332] (-) TimerEvent: {}
+[28.699683] (-) TimerEvent: {}
+[28.800024] (-) TimerEvent: {}
+[28.900370] (-) TimerEvent: {}
+[29.000673] (-) TimerEvent: {}
+[29.101052] (-) TimerEvent: {}
+[29.201367] (-) TimerEvent: {}
+[29.301720] (-) TimerEvent: {}
+[29.402042] (-) TimerEvent: {}
+[29.502387] (-) TimerEvent: {}
+[29.602726] (-) TimerEvent: {}
+[29.703130] (-) TimerEvent: {}
+[29.803482] (-) TimerEvent: {}
+[29.903927] (-) TimerEvent: {}
+[30.004258] (-) TimerEvent: {}
+[30.104667] (-) TimerEvent: {}
+[30.205036] (-) TimerEvent: {}
+[30.305393] (-) TimerEvent: {}
+[30.405777] (-) TimerEvent: {}
+[30.506188] (-) TimerEvent: {}
+[30.606534] (-) TimerEvent: {}
+[30.706908] (-) TimerEvent: {}
+[30.808217] (-) TimerEvent: {}
+[30.911343] (-) TimerEvent: {}
+[31.011703] (-) TimerEvent: {}
+[31.112081] (-) TimerEvent: {}
+[31.212480] (-) TimerEvent: {}
+[31.312910] (-) TimerEvent: {}
+[31.413258] (-) TimerEvent: {}
+[31.513658] (-) TimerEvent: {}
+[31.614032] (-) TimerEvent: {}
+[31.714403] (-) TimerEvent: {}
+[31.814797] (-) TimerEvent: {}
+[31.915181] (-) TimerEvent: {}
+[32.015493] (-) TimerEvent: {}
+[32.115929] (-) TimerEvent: {}
+[32.216359] (-) TimerEvent: {}
+[32.316690] (-) TimerEvent: {}
+[32.417040] (-) TimerEvent: {}
+[32.517378] (-) TimerEvent: {}
+[32.617725] (-) TimerEvent: {}
+[32.718081] (-) TimerEvent: {}
+[32.731186] (simple_robot) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX executable robot_map_node\x1b[0m\n'}
+[32.818212] (-) TimerEvent: {}
+[32.918585] (-) TimerEvent: {}
+[33.019911] (-) TimerEvent: {}
+[33.120634] (-) TimerEvent: {}
+[33.223564] (-) TimerEvent: {}
+[33.324571] (-) TimerEvent: {}
+[33.426913] (-) TimerEvent: {}
+[33.528695] (-) TimerEvent: {}
+[33.630809] (-) TimerEvent: {}
+[33.735485] (-) TimerEvent: {}
+[33.838181] (-) TimerEvent: {}
+[33.938728] (-) TimerEvent: {}
+[34.039245] (-) TimerEvent: {}
+[34.142612] (-) TimerEvent: {}
+[34.243193] (-) TimerEvent: {}
+[34.344404] (-) TimerEvent: {}
+[34.444866] (-) TimerEvent: {}
+[34.546816] (-) TimerEvent: {}
+[34.648938] (-) TimerEvent: {}
+[34.750773] (-) TimerEvent: {}
+[34.851178] (-) TimerEvent: {}
+[34.951528] (-) TimerEvent: {}
+[35.051894] (-) TimerEvent: {}
+[35.152313] (-) TimerEvent: {}
+[35.252797] (-) TimerEvent: {}
+[35.353163] (-) TimerEvent: {}
+[35.453597] (-) TimerEvent: {}
+[35.554146] (-) TimerEvent: {}
+[35.654764] (-) TimerEvent: {}
+[35.755322] (-) TimerEvent: {}
+[35.855795] (-) TimerEvent: {}
+[35.956266] (-) TimerEvent: {}
+[36.054214] (simple_robot) StdoutLine: {'line': b'[ 50%] Built target robot_map_node\n'}
+[36.056338] (-) TimerEvent: {}
+[36.088895] (simple_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grid_map\x1b[0m\n'}
+[36.151095] (simple_robot) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object src/CMakeFiles/grid_map.dir/main.cpp.o\x1b[0m\n'}
+[36.156445] (-) TimerEvent: {}
+[36.258023] (-) TimerEvent: {}
+[36.362377] (-) TimerEvent: {}
+[36.462812] (-) TimerEvent: {}
+[36.568350] (-) TimerEvent: {}
+[36.669392] (-) TimerEvent: {}
+[36.770159] (-) TimerEvent: {}
+[36.871221] (-) TimerEvent: {}
+[36.972052] (-) TimerEvent: {}
+[37.072658] (-) TimerEvent: {}
+[37.173285] (-) TimerEvent: {}
+[37.273742] (-) TimerEvent: {}
+[37.374193] (-) TimerEvent: {}
+[37.474724] (-) TimerEvent: {}
+[37.575299] (-) TimerEvent: {}
+[37.676198] (-) TimerEvent: {}
+[37.776628] (-) TimerEvent: {}
+[37.877028] (-) TimerEvent: {}
+[37.977448] (-) TimerEvent: {}
+[38.078142] (-) TimerEvent: {}
+[38.178555] (-) TimerEvent: {}
+[38.279013] (-) TimerEvent: {}
+[38.380386] (-) TimerEvent: {}
+[38.480935] (-) TimerEvent: {}
+[38.581479] (-) TimerEvent: {}
+[38.682416] (-) TimerEvent: {}
+[38.784368] (-) TimerEvent: {}
+[38.884855] (-) TimerEvent: {}
+[38.985642] (-) TimerEvent: {}
+[39.085984] (-) TimerEvent: {}
+[39.186371] (-) TimerEvent: {}
+[39.286718] (-) TimerEvent: {}
+[39.387105] (-) TimerEvent: {}
+[39.487389] (-) TimerEvent: {}
+[39.587766] (-) TimerEvent: {}
+[39.688125] (-) TimerEvent: {}
+[39.788518] (-) TimerEvent: {}
+[39.888907] (-) TimerEvent: {}
+[39.989313] (-) TimerEvent: {}
+[40.089706] (-) TimerEvent: {}
+[40.190090] (-) TimerEvent: {}
+[40.290447] (-) TimerEvent: {}
+[40.390837] (-) TimerEvent: {}
+[40.491236] (-) TimerEvent: {}
+[40.591665] (-) TimerEvent: {}
+[40.692005] (-) TimerEvent: {}
+[40.792379] (-) TimerEvent: {}
+[40.892743] (-) TimerEvent: {}
+[40.993378] (-) TimerEvent: {}
+[41.094438] (-) TimerEvent: {}
+[41.194803] (-) TimerEvent: {}
+[41.295165] (-) TimerEvent: {}
+[41.395518] (-) TimerEvent: {}
+[41.495921] (-) TimerEvent: {}
+[41.596264] (-) TimerEvent: {}
+[41.696659] (-) TimerEvent: {}
+[41.797035] (-) TimerEvent: {}
+[41.897375] (-) TimerEvent: {}
+[41.997703] (-) TimerEvent: {}
+[42.098047] (-) TimerEvent: {}
+[42.198371] (-) TimerEvent: {}
+[42.298710] (-) TimerEvent: {}
+[42.399065] (-) TimerEvent: {}
+[42.499372] (-) TimerEvent: {}
+[42.599730] (-) TimerEvent: {}
+[42.700077] (-) TimerEvent: {}
+[42.800375] (-) TimerEvent: {}
+[42.900726] (-) TimerEvent: {}
+[43.002350] (-) TimerEvent: {}
+[43.102723] (-) TimerEvent: {}
+[43.203127] (-) TimerEvent: {}
+[43.303506] (-) TimerEvent: {}
+[43.403885] (-) TimerEvent: {}
+[43.504249] (-) TimerEvent: {}
+[43.604618] (-) TimerEvent: {}
+[43.705008] (-) TimerEvent: {}
+[43.805366] (-) TimerEvent: {}
+[43.905726] (-) TimerEvent: {}
+[44.006113] (-) TimerEvent: {}
+[44.106451] (-) TimerEvent: {}
+[44.206851] (-) TimerEvent: {}
+[44.307216] (-) TimerEvent: {}
+[44.407650] (-) TimerEvent: {}
+[44.508116] (-) TimerEvent: {}
+[44.608519] (-) TimerEvent: {}
+[44.708894] (-) TimerEvent: {}
+[44.809368] (-) TimerEvent: {}
+[44.910072] (-) TimerEvent: {}
+[45.010468] (-) TimerEvent: {}
+[45.111340] (-) TimerEvent: {}
+[45.211734] (-) TimerEvent: {}
+[45.312058] (-) TimerEvent: {}
+[45.412373] (-) TimerEvent: {}
+[45.512792] (-) TimerEvent: {}
+[45.613201] (-) TimerEvent: {}
+[45.713544] (-) TimerEvent: {}
+[45.813916] (-) TimerEvent: {}
+[45.914284] (-) TimerEvent: {}
+[46.014639] (-) TimerEvent: {}
+[46.115005] (-) TimerEvent: {}
+[46.215372] (-) TimerEvent: {}
+[46.315741] (-) TimerEvent: {}
+[46.416108] (-) TimerEvent: {}
+[46.516460] (-) TimerEvent: {}
+[46.616832] (-) TimerEvent: {}
+[46.717204] (-) TimerEvent: {}
+[46.817583] (-) TimerEvent: {}
+[46.917996] (-) TimerEvent: {}
+[47.018371] (-) TimerEvent: {}
+[47.118728] (-) TimerEvent: {}
+[47.219092] (-) TimerEvent: {}
+[47.321344] (-) TimerEvent: {}
+[47.421733] (-) TimerEvent: {}
+[47.522152] (-) TimerEvent: {}
+[47.622563] (-) TimerEvent: {}
+[47.723465] (-) TimerEvent: {}
+[47.823838] (-) TimerEvent: {}
+[47.924223] (-) TimerEvent: {}
+[48.024630] (-) TimerEvent: {}
+[48.125044] (-) TimerEvent: {}
+[48.225501] (-) TimerEvent: {}
+[48.325924] (-) TimerEvent: {}
+[48.426302] (-) TimerEvent: {}
+[48.526666] (-) TimerEvent: {}
+[48.627045] (-) TimerEvent: {}
+[48.727429] (-) TimerEvent: {}
+[48.827814] (-) TimerEvent: {}
+[48.928219] (-) TimerEvent: {}
+[49.028618] (-) TimerEvent: {}
+[49.129065] (-) TimerEvent: {}
+[49.229454] (-) TimerEvent: {}
+[49.329830] (-) TimerEvent: {}
+[49.430204] (-) TimerEvent: {}
+[49.530573] (-) TimerEvent: {}
+[49.630952] (-) TimerEvent: {}
+[49.731337] (-) TimerEvent: {}
+[49.831781] (-) TimerEvent: {}
+[49.932224] (-) TimerEvent: {}
+[50.032636] (-) TimerEvent: {}
+[50.133050] (-) TimerEvent: {}
+[50.233379] (-) TimerEvent: {}
+[50.333753] (-) TimerEvent: {}
+[50.434146] (-) TimerEvent: {}
+[50.534554] (-) TimerEvent: {}
+[50.634945] (-) TimerEvent: {}
+[50.735390] (-) TimerEvent: {}
+[50.835863] (-) TimerEvent: {}
+[50.936322] (-) TimerEvent: {}
+[51.037201] (-) TimerEvent: {}
+[51.137729] (-) TimerEvent: {}
+[51.238221] (-) TimerEvent: {}
+[51.338668] (-) TimerEvent: {}
+[51.439091] (-) TimerEvent: {}
+[51.539502] (-) TimerEvent: {}
+[51.639853] (-) TimerEvent: {}
+[51.740299] (-) TimerEvent: {}
+[51.840689] (-) TimerEvent: {}
+[51.941024] (-) TimerEvent: {}
+[52.041338] (-) TimerEvent: {}
+[52.141710] (-) TimerEvent: {}
+[52.242046] (-) TimerEvent: {}
+[52.342406] (-) TimerEvent: {}
+[52.442819] (-) TimerEvent: {}
+[52.543187] (-) TimerEvent: {}
+[52.643562] (-) TimerEvent: {}
+[52.743947] (-) TimerEvent: {}
+[52.844369] (-) TimerEvent: {}
+[52.944854] (-) TimerEvent: {}
+[53.045266] (-) TimerEvent: {}
+[53.145662] (-) TimerEvent: {}
+[53.246094] (-) TimerEvent: {}
+[53.346500] (-) TimerEvent: {}
+[53.446982] (-) TimerEvent: {}
+[53.547503] (-) TimerEvent: {}
+[53.648014] (-) TimerEvent: {}
+[53.748495] (-) TimerEvent: {}
+[53.848848] (-) TimerEvent: {}
+[53.949194] (-) TimerEvent: {}
+[54.049496] (-) TimerEvent: {}
+[54.149818] (-) TimerEvent: {}
+[54.250158] (-) TimerEvent: {}
+[54.350458] (-) TimerEvent: {}
+[54.450798] (-) TimerEvent: {}
+[54.551129] (-) TimerEvent: {}
+[54.651473] (-) TimerEvent: {}
+[54.751806] (-) TimerEvent: {}
+[54.852145] (-) TimerEvent: {}
+[54.952454] (-) TimerEvent: {}
+[55.052783] (-) TimerEvent: {}
+[55.153190] (-) TimerEvent: {}
+[55.253552] (-) TimerEvent: {}
+[55.353926] (-) TimerEvent: {}
+[55.454268] (-) TimerEvent: {}
+[55.554666] (-) TimerEvent: {}
+[55.655071] (-) TimerEvent: {}
+[55.755403] (-) TimerEvent: {}
+[55.855731] (-) TimerEvent: {}
+[55.956109] (-) TimerEvent: {}
+[56.056412] (-) TimerEvent: {}
+[56.156792] (-) TimerEvent: {}
+[56.257160] (-) TimerEvent: {}
+[56.357502] (-) TimerEvent: {}
+[56.457878] (-) TimerEvent: {}
+[56.558301] (-) TimerEvent: {}
+[56.658692] (-) TimerEvent: {}
+[56.759069] (-) TimerEvent: {}
+[56.859444] (-) TimerEvent: {}
+[56.959840] (-) TimerEvent: {}
+[57.060211] (-) TimerEvent: {}
+[57.160510] (-) TimerEvent: {}
+[57.260830] (-) TimerEvent: {}
+[57.361128] (-) TimerEvent: {}
+[57.461461] (-) TimerEvent: {}
+[57.561787] (-) TimerEvent: {}
+[57.662143] (-) TimerEvent: {}
+[57.762522] (-) TimerEvent: {}
+[57.862974] (-) TimerEvent: {}
+[57.963313] (-) TimerEvent: {}
+[58.063689] (-) TimerEvent: {}
+[58.164030] (-) TimerEvent: {}
+[58.264378] (-) TimerEvent: {}
+[58.364690] (-) TimerEvent: {}
+[58.465038] (-) TimerEvent: {}
+[58.565380] (-) TimerEvent: {}
+[58.665711] (-) TimerEvent: {}
+[58.766022] (-) TimerEvent: {}
+[58.866373] (-) TimerEvent: {}
+[58.966706] (-) TimerEvent: {}
+[59.067064] (-) TimerEvent: {}
+[59.167414] (-) TimerEvent: {}
+[59.267768] (-) TimerEvent: {}
+[59.368115] (-) TimerEvent: {}
+[59.468434] (-) TimerEvent: {}
+[59.568811] (-) TimerEvent: {}
+[59.669216] (-) TimerEvent: {}
+[59.769615] (-) TimerEvent: {}
+[59.870017] (-) TimerEvent: {}
+[59.970397] (-) TimerEvent: {}
+[60.072480] (-) TimerEvent: {}
+[60.172851] (-) TimerEvent: {}
+[60.273307] (-) TimerEvent: {}
+[60.375350] (-) TimerEvent: {}
+[60.475778] (-) TimerEvent: {}
+[60.576146] (-) TimerEvent: {}
+[60.676441] (-) TimerEvent: {}
+[60.776759] (-) TimerEvent: {}
+[60.877094] (-) TimerEvent: {}
+[60.977372] (-) TimerEvent: {}
+[61.077709] (-) TimerEvent: {}
+[61.178038] (-) TimerEvent: {}
+[61.278365] (-) TimerEvent: {}
+[61.378706] (-) TimerEvent: {}
+[61.479055] (-) TimerEvent: {}
+[61.579370] (-) TimerEvent: {}
+[61.679692] (-) TimerEvent: {}
+[61.779986] (-) TimerEvent: {}
+[61.880370] (-) TimerEvent: {}
+[61.980703] (-) TimerEvent: {}
+[62.081115] (-) TimerEvent: {}
+[62.181388] (-) TimerEvent: {}
+[62.281733] (-) TimerEvent: {}
+[62.382063] (-) TimerEvent: {}
+[62.482368] (-) TimerEvent: {}
+[62.582725] (-) TimerEvent: {}
+[62.683110] (-) TimerEvent: {}
+[62.783484] (-) TimerEvent: {}
+[62.883850] (-) TimerEvent: {}
+[62.984291] (-) TimerEvent: {}
+[63.084769] (-) TimerEvent: {}
+[63.185164] (-) TimerEvent: {}
+[63.285563] (-) TimerEvent: {}
+[63.385975] (-) TimerEvent: {}
+[63.486373] (-) TimerEvent: {}
+[63.586763] (-) TimerEvent: {}
+[63.644950] (simple_robot) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libgrid_map.so\x1b[0m\n'}
+[63.686883] (-) TimerEvent: {}
+[63.787252] (-) TimerEvent: {}
+[63.887722] (-) TimerEvent: {}
+[63.988574] (-) TimerEvent: {}
+[64.089629] (-) TimerEvent: {}
+[64.190964] (-) TimerEvent: {}
+[64.293673] (-) TimerEvent: {}
+[64.394817] (-) TimerEvent: {}
+[64.498009] (-) TimerEvent: {}
+[64.600106] (-) TimerEvent: {}
+[64.703674] (-) TimerEvent: {}
+[64.804299] (-) TimerEvent: {}
+[64.908503] (-) TimerEvent: {}
+[65.010391] (-) TimerEvent: {}
+[65.111178] (-) TimerEvent: {}
+[65.212197] (-) TimerEvent: {}
+[65.312666] (-) TimerEvent: {}
+[65.415523] (-) TimerEvent: {}
+[65.515976] (-) TimerEvent: {}
+[65.616342] (-) TimerEvent: {}
+[65.716747] (-) TimerEvent: {}
+[65.817204] (-) TimerEvent: {}
+[65.918016] (-) TimerEvent: {}
+[66.018474] (-) TimerEvent: {}
+[66.118916] (-) TimerEvent: {}
+[66.132646] (simple_robot) StdoutLine: {'line': b'[100%] Built target grid_map\n'}
+[66.162190] (simple_robot) CommandEnded: {'returncode': 0}
+[66.164131] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'install'}
+[66.185453] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '887'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1152'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3260'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:11413'), ('_P9K_SSH_TTY', '/dev/pts/2'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1105,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1105'), ('INVOCATION_ID', 'abb78b4b018940349bd4da4c8fed9753'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.L52E22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'f672ca6a-f6db-4411-8134-b3ad71667d44'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/2'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/2'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[66.210066] (simple_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[66.210511] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/simple_robot/robot_map_node\n'}
+[66.219062] (-) TimerEvent: {}
+[66.232079] (simple_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/simple_robot/robot_map_node" to ""\n'}
+[66.232726] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/package_run_dependencies/simple_robot\n'}
+[66.232943] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/parent_prefix_path/simple_robot\n'}
+[66.233099] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.sh\n'}
+[66.233254] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.dsv\n'}
+[66.233733] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.sh\n'}
+[66.234227] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.dsv\n'}
+[66.234814] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.bash\n'}
+[66.235191] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.sh\n'}
+[66.235551] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.zsh\n'}
+[66.235913] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.dsv\n'}
+[66.236143] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.dsv\n'}
+[66.236398] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/packages/simple_robot\n'}
+[66.236562] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig.cmake\n'}
+[66.236696] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig-version.cmake\n'}
+[66.236826] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.xml\n'}
+[66.240438] (simple_robot) CommandEnded: {'returncode': 0}
+[66.288857] (simple_robot) JobEnded: {'identifier': 'simple_robot', 'rc': 0}
+[66.290568] (-) EventReactorShutdown: {}

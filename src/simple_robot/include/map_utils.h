@@ -17,6 +17,9 @@ void drawCircle(Canvas& canvas, const Vector2i& center, int radius, uint8_t colo
 
 int showCanvas( Canvas& canvas, int timeout_ms);
 
+void closeCanvas();
+
+void refreshCanvas(Canvas& canvas);
 
 
 /**

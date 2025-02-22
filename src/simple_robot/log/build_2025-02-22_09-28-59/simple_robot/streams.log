@@ -1,0 +1,67 @@
+[0.031s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[0.217s] -- The C compiler identification is GNU 11.4.0
+[0.406s] -- The CXX compiler identification is GNU 11.4.0
+[0.442s] -- Detecting C compiler ABI info
+[0.608s] -- Detecting C compiler ABI info - done
+[0.623s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.624s] -- Detecting C compile features
+[0.624s] -- Detecting C compile features - done
+[0.629s] -- Detecting CXX compiler ABI info
+[0.840s] -- Detecting CXX compiler ABI info - done
+[0.857s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.858s] -- Detecting CXX compile features
+[0.859s] -- Detecting CXX compile features - done
+[0.892s] -- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") 
+[0.901s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.209s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.364s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.434s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.442s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.459s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.484s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.522s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.607s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.611s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.920s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.992s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.101s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.120s] -- Looking for pthread.h
+[2.281s] -- Looking for pthread.h - found
+[2.281s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.418s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.420s] -- Found Threads: TRUE  
+[2.518s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.539s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.572s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.606s] -- Found OpenCV: /usr (found version "4.5.4") 
+[2.720s] -- DATA_DIR: /home/martina/rp_project/robot-programming-project/src/simple_robot/data
+[2.720s] -- Configuring done
+[2.768s] -- Generating done
+[2.785s] -- Build files have been written to: /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[2.811s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[2.819s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[2.956s] [35m[1mConsolidate compiler generated dependencies of target grid_map[0m
+[2.956s] [35m[1mConsolidate compiler generated dependencies of target robot_map_node[0m
+[3.041s] [  8%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/main.cpp.o[0m
+[3.054s] [ 16%] [32mBuilding CXX object CMakeFiles/robot_map_node.dir/src/main.cpp.o[0m
+[19.308s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In member function ‘[01m[Kvoid KeyboardControlNode::key_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[19.308s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:47:13:[m[K [01;31m[Kerror: [m[Kjump to case label
+[19.309s]    47 |             [01;31m[Kdefault[m[K:
+[19.309s]       |             [01;31m[K^~~~~~~[m[K
+[19.309s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:43:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd_msgs::msg::Int32_<std::allocator<void> > laser_msg[m[K’
+[19.309s]    43 |                 auto [01;36m[Klaser_msg[m[K = std_msgs::msg::Int32();
+[19.309s]       |                      [01;36m[K^~~~~~~~~[m[K
+[19.310s] gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:132: src/CMakeFiles/grid_map.dir/main.cpp.o] Error 1
+[19.311s] gmake[1]: *** [CMakeFiles/Makefile2:180: src/CMakeFiles/grid_map.dir/all] Error 2
+[19.311s] gmake[1]: *** Waiting for unfinished jobs....
+[19.389s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In member function ‘[01m[Kvoid KeyboardControlNode::key_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[19.390s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:47:13:[m[K [01;31m[Kerror: [m[Kjump to case label
+[19.390s]    47 |             [01;31m[Kdefault[m[K:
+[19.390s]       |             [01;31m[K^~~~~~~[m[K
+[19.391s] [01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:43:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd_msgs::msg::Int32_<std::allocator<void> > laser_msg[m[K’
+[19.391s]    43 |                 auto [01;36m[Klaser_msg[m[K = std_msgs::msg::Int32();
+[19.392s]       |                      [01;36m[K^~~~~~~~~[m[K
+[19.393s] gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Error 1
+[19.394s] gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/robot_map_node.dir/all] Error 2
+[19.396s] gmake: *** [Makefile:146: all] Error 2
+[19.408s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4

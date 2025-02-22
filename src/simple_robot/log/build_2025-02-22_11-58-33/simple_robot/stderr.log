@@ -1,0 +1,5 @@
+gmake[2]: *** [CMakeFiles/robot_map_node.dir/build.make:132: CMakeFiles/robot_map_node.dir/src/main.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/robot_map_node.dir/all] Interrupt
+gmake[2]: *** [src/CMakeFiles/grid_map.dir/build.make:132: src/CMakeFiles/grid_map.dir/main.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:180: src/CMakeFiles/grid_map.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

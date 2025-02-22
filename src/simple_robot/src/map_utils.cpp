@@ -37,6 +37,14 @@ int showCanvas( Canvas& canvas, int timeout_ms) {
     return key;
 }
 
+void closeCanvas() {
+    cv::destroyWindow("Canvas");
+}
+
+void refreshCanvas(Canvas& canvas) {
+    cv::imshow("Canvas", canvas);
+}
+
 void GridMapping::resize(int rows, int cols, float resolution) {
     world_to_grid.setIdentity(); 
     float inv_res = 1.0f / resolution;
