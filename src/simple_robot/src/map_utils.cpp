@@ -11,9 +11,7 @@ void drawGrid(Canvas& dest, const Grid_<uint8_t>& src) {
     dest.rows = src.rows;
     dest.cols = src.cols;
     memcpy(dest.data, &src.cells[0], src.rows *src.cols);
-    // print the dimensions of the canvas
-    std::cout << "Canvas size after drawGrid: " << dest.rows << "x" << dest.cols << std::endl;
-
+    
 }
 
 void drawLine(Canvas& dest, const Vector2i& start, const Vector2i& end, uint8_t color) {
@@ -26,8 +24,7 @@ void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color)
 
 
 int showCanvas( Canvas& canvas, int timeout_ms) {
-    std::cout << "Canvas size: " << canvas.rows << "x" << canvas.cols << std::endl;
-    //show the image in a fixed size window size
+ //show the image in a fixed size window size
     cv::imshow("Canvas", canvas);
 
     //make the canvas focused
