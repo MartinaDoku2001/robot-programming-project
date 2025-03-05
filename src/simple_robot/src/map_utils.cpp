@@ -27,8 +27,15 @@ void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color)
 }
 
 void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color_red, uint8_t color_green, uint8_t color_blue) {
-    cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color_blue,color_green,color_red),1);
+    // Convert to 3-channel if it's still grayscale
+    if (dest.channels() == 1) {
+        cv::cvtColor(dest, dest, cv::COLOR_GRAY2BGR);
+    }
+    
+    // Draw the colored circle
+    cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color_blue, color_green, color_red), -1);
 }
+
 
 
 int showCanvas(Canvas& canvas, int timeout_ms) {
@@ -93,7 +100,7 @@ cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0), 1);
 
 // Highlight goal reached message
 if (goal_reached) {
-cv::putText(canvas, "GOAL REACHED!", cv::Point(10, 120),
+cv::putText(canvas, "GOAL REACHED!", cv::Point(10, 125),
 cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 2);
 }
 }

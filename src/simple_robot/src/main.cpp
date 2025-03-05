@@ -131,8 +131,6 @@ private:
             laser_angle_msg.data = laser_angle_;
             laser_angle_pub_->publish(laser_angle_msg);
         }
-     
-
     }
     
 
@@ -174,6 +172,9 @@ class MapNode : public rclcpp::Node {
                 std::chrono::milliseconds(100), 
                 std::bind(&MapNode::refresh_callback, this));
             
+            // Initialize a timer that counts the elapsed time
+            auto start_time = std::chrono::high_resolution_clock::now();
+
             // Display the map
             display_map();
 
@@ -192,7 +193,7 @@ class MapNode : public rclcpp::Node {
             robot_.draw(canvas, grid_map_, 127, 5);
 
             // Draw the goal as a red circle
-            drawCircle(canvas, grid_map_.gm.world2grid(goal_position_).cast<int>(), 5, 127,0,0);
+            drawCircle(canvas, grid_map_.gm.world2grid(goal_position_).cast<int>(), 5, 250,0,0);
             
             if (laser_active_) {
                 float origin_x = robot_.getPosition()[0], origin_y = robot_.getPosition()[1];
@@ -208,8 +209,9 @@ class MapNode : public rclcpp::Node {
                 }
                 drawLine(canvas, grid_map_.gm.world2grid(Vector2f(origin_x, origin_y)).cast<int>(), 
                          grid_map_.gm.world2grid(destination).cast<int>(), 127);
-                displayValuesOnCanvas(canvas, distance_, robot_.getPosition(), goal_position_, laser_active_, goal_reached_, 0.0);
-            }
+               }
+            time_elapsed_= std::chrono::duration<float>(std::chrono::high_resolution_clock::now() - start_time).count();
+            displayValuesOnCanvas(canvas, distance_, robot_.getPosition(), goal_position_, laser_active_, goal_reached_, time_elapsed_);
             
             key = showCanvas(canvas, 10);
             auto key_msg = std_msgs::msg::Int32();
@@ -222,9 +224,10 @@ class MapNode : public rclcpp::Node {
             
             
             // Check if the goal is reached
-            if (robot_.getPosition().isApprox(goal_position_, 0.5)) {
+            float distance_from_goal = (robot_.getPosition() - goal_position_).norm();
+            if (distance_from_goal < 1.0) {
                 goal_reached_ = true;
-                std::cout << "Goal reached!" << std::endl;
+            
             }   
 
             // If laser is inactive, update the map only on position changes
@@ -260,6 +263,8 @@ class MapNode : public rclcpp::Node {
         bool laser_active_;
         float laser_angle_;
         bool hit_;
+        float time_elapsed_;
+        std::chrono::high_resolution_clock::time_point start_time = std::chrono::high_resolution_clock::now();
     
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr map_pub_;
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr key_pub_;
@@ -279,8 +284,7 @@ int main(int argc, char **argv) {
     auto robot_node = std::make_shared<RobotNode>();
     auto map_node = std::make_shared<MapNode>();
 
-    // Run control loop for keyboard node
-
+    // Create threads
     std::thread control_thread([&]() { rclcpp::spin(control_node); });
     std::thread robot_thread([&]() { rclcpp::spin(robot_node); });
     std::thread map_thread([&]() { rclcpp::spin(map_node); });

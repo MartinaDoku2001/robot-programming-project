@@ -1,0 +1,8 @@
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:176:18:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart_time[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  176 |             auto [01;35m[Kstart_time[m[K = std::chrono::high_resolution_clock::now();
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In constructor ‘[01m[KMapNode::MapNode()[m[K’:
+[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:176:18:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart_time[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  176 |             auto [01;35m[Kstart_time[m[K = std::chrono::high_resolution_clock::now();
+      |                  [01;35m[K^~~~~~~~~~[m[K

@@ -45,10 +45,10 @@
 [ 50%] [32m[1mLinking CXX executable robot_map_node[0m
 [ 50%] Built target robot_map_node
 [ 58%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/grid_map.cpp.o[0m
-[ 66%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/map_utils.cpp.o[0m
-[ 75%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/dmap.cpp.o[0m
-[ 83%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/main.cpp.o[0m
-[ 91%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/robot.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/dmap.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/main.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/robot.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/grid_map.dir/map_utils.cpp.o[0m
 [100%] [32m[1mLinking CXX shared library libgrid_map.so[0m
 [100%] Built target grid_map
 -- Install configuration: ""
