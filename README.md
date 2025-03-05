@@ -26,7 +26,7 @@ Laser scans are crucial for detecting obstacles and obstacle avoidance. The prog
 
 ### 4. Goal Display and Detection
 
-The program allows users to set a goal position on the map. The robot then navigates towards the goal, and the system detects when the robot successfully reaches it. This feature is essential for autonomous navigation and task completion.
+The program allows users to set a goal position on the map. The robot then can be guided towards the goal, and the system detects when the robot successfully reaches it. 
 
 ![Laser Scan Demo](assets/goal.gif)
 
@@ -36,7 +36,7 @@ To run the program, navigate to the `src/simple_robot` folder and execute the fo
 
 ```sh
 cd src/simple_robot
-./run_robot.sh
+./run_simple_robot.sh
 
 
 
