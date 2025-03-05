@@ -37,6 +37,21 @@ void refreshCanvas(Canvas& canvas);
 void displayValuesOnCanvas( Canvas& canvas, float distance, Eigen::Vector2f robot_position);
 
 
+/**
+ * @brief RFunction to display the values on the canvas.
+ * 
+ * This function displays the values of the distance of the closest obstacle in the laser range (given as a parameter)
+ * and the position of the robot on the canvas.
+ * 
+ * @param canvas The canvas to display the values on.
+ * @param distance The distance of the closest obstacle in the laser range.
+ * @param robot_position The position of the robot.
+ * @param goal_position The position of the goal.
+ * @param laser_active The state of the laser.
+ * @param goal_reached The state of the goal.
+ * @param time_elapsed The time elapsed since the start of the program.
+ * 
+ */
 void displayValuesOnCanvas(Canvas& canvas, float distance, Eigen::Vector2f robot_position, 
     Eigen::Vector2f goal_position, bool laser_active, bool goal_reached,  float time_elapsed);
 
@@ -104,15 +119,24 @@ struct GridMapping {
      * 
      * @return The world coordinates of the grid point.
      */
-    inline Eigen::Vector2f grid2world(const Eigen::Vector2f& grid_point)const {// get the world coordinates of a grid point
+    inline Eigen::Vector2f grid2world(const Eigen::Vector2f& grid_point)const {/
         return grid_to_world * grid_point;
     }
 
-    inline const Eigen::Matrix2f& world2gridDerivative()const { //get the derivative of the world to grid transformation
+
+    /**
+     * @brief Get the derivative of the world to grid transformation.
+     * 
+     */
+    inline const Eigen::Matrix2f& world2gridDerivative()const { 
         return world_to_grid_d;
     }
 
-    inline const Eigen::Matrix2f& grid2worldDerivative()const { //get the derivative of the grid to world transformation
+    /**
+     * @brief Get the derivative of the grid to world transformation.
+     * 
+     */
+    inline const Eigen::Matrix2f& grid2worldDerivative()const { 
         return grid_to_world_d;
     }
 };

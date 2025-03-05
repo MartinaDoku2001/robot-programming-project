@@ -62,6 +62,9 @@ ament_package()
 
 # Define the data directory
 set(DATA_DIR "${CMAKE_SOURCE_DIR}/data")
+set(ament_cmake_DIR "/opt/ros/foxy/share/ament_cmake/cmake")
+set(CMAKE_CXX_STANDARD 17)  # Use C++17 or newer
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DDATA_DIR=\"${DATA_DIR}\")
 
 # Print the data directory for debugging

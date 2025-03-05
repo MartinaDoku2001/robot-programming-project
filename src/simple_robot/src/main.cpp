@@ -172,9 +172,6 @@ class MapNode : public rclcpp::Node {
                 std::chrono::milliseconds(100), 
                 std::bind(&MapNode::refresh_callback, this));
             
-            // Initialize a timer that counts the elapsed time
-            auto start_time = std::chrono::high_resolution_clock::now();
-
             // Display the map
             display_map();
 

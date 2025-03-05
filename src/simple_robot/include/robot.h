@@ -61,7 +61,6 @@ public:
 
 private:
     Eigen::Vector2f position_; // Position of the robot
-    //orientation of the robot
-    float orientation_;
+    float orientation_; // Orientation of the robot
 };
 

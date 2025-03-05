@@ -55,7 +55,6 @@ float GridMap::scanRayDistance(const Vector2f& origin,
 
 void GridMap::loadFromImage(std::string filename, float res) {
   resolution = res;
-  cerr << "loading [" << filename << "]" << endl;
   cv::Mat m = cv::imread(filename);
   if (m.rows == 0) {
     throw std::runtime_error("unable to load image");
@@ -65,9 +64,6 @@ void GridMap::loadFromImage(std::string filename, float res) {
   int size = loaded_image.rows * loaded_image.cols;
   resize(loaded_image.rows, loaded_image.cols);
   gm.resize(rows, cols, res);
-  cerr << "transform: " << endl;
-  cerr << gm.world_to_grid.matrix() << endl;
-  
   memcpy(&cells[0], loaded_image.data, size);
 }
 
