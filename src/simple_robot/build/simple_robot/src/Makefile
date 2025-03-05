@@ -185,30 +185,6 @@ grid_map/fast:
 	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/build
 .PHONY : grid_map/fast
 
-dmap.o: dmap.cpp.o
-.PHONY : dmap.o
-
-# target to build an object file
-dmap.cpp.o:
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/dmap.cpp.o
-.PHONY : dmap.cpp.o
-
-dmap.i: dmap.cpp.i
-.PHONY : dmap.i
-
-# target to preprocess a source file
-dmap.cpp.i:
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/dmap.cpp.i
-.PHONY : dmap.cpp.i
-
-dmap.s: dmap.cpp.s
-.PHONY : dmap.s
-
-# target to generate assembly for a file
-dmap.cpp.s:
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/dmap.cpp.s
-.PHONY : dmap.cpp.s
-
 grid_map.o: grid_map.cpp.o
 .PHONY : grid_map.o
 
@@ -319,9 +295,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... grid_map"
-	@echo "... dmap.o"
-	@echo "... dmap.i"
-	@echo "... dmap.s"
 	@echo "... grid_map.o"
 	@echo "... grid_map.i"
 	@echo "... grid_map.s"

@@ -35,7 +35,6 @@ add_subdirectory(src)
 add_executable(robot_map_node 
   src/grid_map.cpp 
   src/robot.cpp 
-  src/dmap.cpp 
   src/map_utils.cpp 
   src/main.cpp
 )

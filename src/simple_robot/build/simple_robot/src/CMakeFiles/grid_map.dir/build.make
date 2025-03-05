@@ -111,24 +111,10 @@ src/CMakeFiles/grid_map.dir/robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grid_map.dir/robot.cpp.s"
 	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp -o CMakeFiles/grid_map.dir/robot.cpp.s
 
-src/CMakeFiles/grid_map.dir/dmap.cpp.o: src/CMakeFiles/grid_map.dir/flags.make
-src/CMakeFiles/grid_map.dir/dmap.cpp.o: ../../src/dmap.cpp
-src/CMakeFiles/grid_map.dir/dmap.cpp.o: src/CMakeFiles/grid_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/grid_map.dir/dmap.cpp.o"
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/grid_map.dir/dmap.cpp.o -MF CMakeFiles/grid_map.dir/dmap.cpp.o.d -o CMakeFiles/grid_map.dir/dmap.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp
-
-src/CMakeFiles/grid_map.dir/dmap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grid_map.dir/dmap.cpp.i"
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp > CMakeFiles/grid_map.dir/dmap.cpp.i
-
-src/CMakeFiles/grid_map.dir/dmap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grid_map.dir/dmap.cpp.s"
-	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp -o CMakeFiles/grid_map.dir/dmap.cpp.s
-
 src/CMakeFiles/grid_map.dir/main.cpp.o: src/CMakeFiles/grid_map.dir/flags.make
 src/CMakeFiles/grid_map.dir/main.cpp.o: ../../src/main.cpp
 src/CMakeFiles/grid_map.dir/main.cpp.o: src/CMakeFiles/grid_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/grid_map.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/grid_map.dir/main.cpp.o"
 	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/grid_map.dir/main.cpp.o -MF CMakeFiles/grid_map.dir/main.cpp.o.d -o CMakeFiles/grid_map.dir/main.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp
 
 src/CMakeFiles/grid_map.dir/main.cpp.i: cmake_force
@@ -144,7 +130,6 @@ grid_map_OBJECTS = \
 "CMakeFiles/grid_map.dir/grid_map.cpp.o" \
 "CMakeFiles/grid_map.dir/map_utils.cpp.o" \
 "CMakeFiles/grid_map.dir/robot.cpp.o" \
-"CMakeFiles/grid_map.dir/dmap.cpp.o" \
 "CMakeFiles/grid_map.dir/main.cpp.o"
 
 # External object files for target grid_map
@@ -153,7 +138,6 @@ grid_map_EXTERNAL_OBJECTS =
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/grid_map.cpp.o
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/map_utils.cpp.o
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/robot.cpp.o
-src/libgrid_map.so: src/CMakeFiles/grid_map.dir/dmap.cpp.o
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/main.cpp.o
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/build.make
 src/libgrid_map.so: /opt/ros/humble/lib/librclcpp.so
@@ -265,7 +249,7 @@ src/libgrid_map.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 src/libgrid_map.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 src/libgrid_map.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 src/libgrid_map.so: src/CMakeFiles/grid_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libgrid_map.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libgrid_map.so"
 	cd /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/grid_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -119,7 +119,7 @@ struct GridMapping {
      * 
      * @return The world coordinates of the grid point.
      */
-    inline Eigen::Vector2f grid2world(const Eigen::Vector2f& grid_point)const {/
+    inline Eigen::Vector2f grid2world(const Eigen::Vector2f& grid_point)const {
         return grid_to_world * grid_point;
     }
 

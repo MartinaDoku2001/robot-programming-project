@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/grid_map.dir/dmap.cpp.o"
-  "CMakeFiles/grid_map.dir/dmap.cpp.o.d"
   "CMakeFiles/grid_map.dir/grid_map.cpp.o"
   "CMakeFiles/grid_map.dir/grid_map.cpp.o.d"
   "CMakeFiles/grid_map.dir/main.cpp.o"

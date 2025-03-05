@@ -97,24 +97,10 @@ CMakeFiles/robot_map_node.dir/src/robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_map_node.dir/src/robot.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/martina/rp_project/robot-programming-project/src/simple_robot/src/robot.cpp -o CMakeFiles/robot_map_node.dir/src/robot.cpp.s
 
-CMakeFiles/robot_map_node.dir/src/dmap.cpp.o: CMakeFiles/robot_map_node.dir/flags.make
-CMakeFiles/robot_map_node.dir/src/dmap.cpp.o: ../../src/dmap.cpp
-CMakeFiles/robot_map_node.dir/src/dmap.cpp.o: CMakeFiles/robot_map_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robot_map_node.dir/src/dmap.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot_map_node.dir/src/dmap.cpp.o -MF CMakeFiles/robot_map_node.dir/src/dmap.cpp.o.d -o CMakeFiles/robot_map_node.dir/src/dmap.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp
-
-CMakeFiles/robot_map_node.dir/src/dmap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_map_node.dir/src/dmap.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp > CMakeFiles/robot_map_node.dir/src/dmap.cpp.i
-
-CMakeFiles/robot_map_node.dir/src/dmap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_map_node.dir/src/dmap.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/martina/rp_project/robot-programming-project/src/simple_robot/src/dmap.cpp -o CMakeFiles/robot_map_node.dir/src/dmap.cpp.s
-
 CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o: CMakeFiles/robot_map_node.dir/flags.make
 CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o: ../../src/map_utils.cpp
 CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o: CMakeFiles/robot_map_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o -MF CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o.d -o CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp
 
 CMakeFiles/robot_map_node.dir/src/map_utils.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/robot_map_node.dir/src/map_utils.cpp.s: cmake_force
 CMakeFiles/robot_map_node.dir/src/main.cpp.o: CMakeFiles/robot_map_node.dir/flags.make
 CMakeFiles/robot_map_node.dir/src/main.cpp.o: ../../src/main.cpp
 CMakeFiles/robot_map_node.dir/src/main.cpp.o: CMakeFiles/robot_map_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robot_map_node.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot_map_node.dir/src/main.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot_map_node.dir/src/main.cpp.o -MF CMakeFiles/robot_map_node.dir/src/main.cpp.o.d -o CMakeFiles/robot_map_node.dir/src/main.cpp.o -c /home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp
 
 CMakeFiles/robot_map_node.dir/src/main.cpp.i: cmake_force
@@ -143,7 +129,6 @@ CMakeFiles/robot_map_node.dir/src/main.cpp.s: cmake_force
 robot_map_node_OBJECTS = \
 "CMakeFiles/robot_map_node.dir/src/grid_map.cpp.o" \
 "CMakeFiles/robot_map_node.dir/src/robot.cpp.o" \
-"CMakeFiles/robot_map_node.dir/src/dmap.cpp.o" \
 "CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o" \
 "CMakeFiles/robot_map_node.dir/src/main.cpp.o"
 
@@ -152,7 +137,6 @@ robot_map_node_EXTERNAL_OBJECTS =
 
 robot_map_node: CMakeFiles/robot_map_node.dir/src/grid_map.cpp.o
 robot_map_node: CMakeFiles/robot_map_node.dir/src/robot.cpp.o
-robot_map_node: CMakeFiles/robot_map_node.dir/src/dmap.cpp.o
 robot_map_node: CMakeFiles/robot_map_node.dir/src/map_utils.cpp.o
 robot_map_node: CMakeFiles/robot_map_node.dir/src/main.cpp.o
 robot_map_node: CMakeFiles/robot_map_node.dir/build.make
@@ -297,7 +281,7 @@ robot_map_node: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 robot_map_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 robot_map_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 robot_map_node: CMakeFiles/robot_map_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable robot_map_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable robot_map_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_map_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

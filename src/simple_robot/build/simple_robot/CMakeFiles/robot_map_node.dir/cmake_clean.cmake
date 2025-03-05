@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/robot_map_node.dir/src/dmap.cpp.o"
-  "CMakeFiles/robot_map_node.dir/src/dmap.cpp.o.d"
   "CMakeFiles/robot_map_node.dir/src/grid_map.cpp.o"
   "CMakeFiles/robot_map_node.dir/src/grid_map.cpp.o.d"
   "CMakeFiles/robot_map_node.dir/src/main.cpp.o"

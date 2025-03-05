@@ -223,30 +223,6 @@ grid_map/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/build
 .PHONY : grid_map/fast
 
-src/dmap.o: src/dmap.cpp.o
-.PHONY : src/dmap.o
-
-# target to build an object file
-src/dmap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.o
-.PHONY : src/dmap.cpp.o
-
-src/dmap.i: src/dmap.cpp.i
-.PHONY : src/dmap.i
-
-# target to preprocess a source file
-src/dmap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.i
-.PHONY : src/dmap.cpp.i
-
-src/dmap.s: src/dmap.cpp.s
-.PHONY : src/dmap.s
-
-# target to generate assembly for a file
-src/dmap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/src/dmap.cpp.s
-.PHONY : src/dmap.cpp.s
-
 src/grid_map.o: src/grid_map.cpp.o
 .PHONY : src/grid_map.o
 
@@ -360,9 +336,6 @@ help:
 	@echo "... uninstall"
 	@echo "... grid_map"
 	@echo "... robot_map_node"
-	@echo "... src/dmap.o"
-	@echo "... src/dmap.i"
-	@echo "... src/dmap.s"
 	@echo "... src/grid_map.o"
 	@echo "... src/grid_map.i"
 	@echo "... src/grid_map.s"

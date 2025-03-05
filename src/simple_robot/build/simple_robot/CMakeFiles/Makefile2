@@ -152,12 +152,12 @@ CMakeFiles/simple_robot_uninstall.dir/clean:
 CMakeFiles/robot_map_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_map_node.dir/build.make CMakeFiles/robot_map_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target robot_map_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=6,7,8,9,10 "Built target robot_map_node"
 .PHONY : CMakeFiles/robot_map_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/robot_map_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_map_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 0
 .PHONY : CMakeFiles/robot_map_node.dir/rule
@@ -178,12 +178,12 @@ CMakeFiles/robot_map_node.dir/clean:
 src/CMakeFiles/grid_map.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/grid_map.dir/build.make src/CMakeFiles/grid_map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target grid_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles --progress-num=1,2,3,4,5 "Built target grid_map"
 .PHONY : src/CMakeFiles/grid_map.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/grid_map.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/grid_map.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles 0
 .PHONY : src/CMakeFiles/grid_map.dir/rule
