@@ -51,7 +51,6 @@ private:
 
         auto angle_msg = std_msgs::msg::Float32();
         angle_msg.data = angle;
-        std::cout << "Publishing angle message from keyboard node " << angle_msg.data << std::endl;
         angle_pub_->publish(angle_msg);
       }
 
@@ -92,13 +91,11 @@ public:
 
 private:
     void angle_callback(const std_msgs::msg::Float32::SharedPtr msg) {
-        std::cout << "Received angle message in robot node " << msg->data << std::endl;
         if (msg->data == -1) {
             //publish the same position
             auto position_msg = geometry_msgs::msg::Pose2D();
             position_msg.x = robot_.getPosition()[0];
             position_msg.y = robot_.getPosition()[1];
-            std::cout << "Publishing position message from robot node " << position_msg.x << ", " << position_msg.y << std::endl;
             position_pub_->publish(position_msg);
            return;
         }
@@ -195,7 +192,7 @@ class MapNode : public rclcpp::Node {
             robot_.draw(canvas, grid_map_, 127, 5);
 
             // Draw the goal as a red circle
-            drawCircle(canvas, grid_map_.gm.world2grid(goal_position_).cast<int>(), 10, 127);
+            drawCircle(canvas, grid_map_.gm.world2grid(goal_position_).cast<int>(), 5, 127,0,0);
             
             if (laser_active_) {
                 float origin_x = robot_.getPosition()[0], origin_y = robot_.getPosition()[1];
@@ -224,12 +221,16 @@ class MapNode : public rclcpp::Node {
             robot_.setPosition(msg->x, msg->y); 
             
             
-            // print something if it gets here
-            std::cout << "Position: " << msg->x << ", " << msg->y << std::endl;
+            // Check if the goal is reached
+            if (robot_.getPosition().isApprox(goal_position_, 0.5)) {
+                goal_reached_ = true;
+                std::cout << "Goal reached!" << std::endl;
+            }   
+
             // If laser is inactive, update the map only on position changes
-            if (!laser_active_) {
-                display_map();  // Refresh map when the position changes but laser is off
-            }
+            
+            display_map();  // Refresh map when the position changes but laser is off
+            
         }
     
         void laser_callback(const std_msgs::msg::Int32::SharedPtr msg) {

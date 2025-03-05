@@ -1,8 +1,0 @@
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp:[m[K In function ‘[01m[Kvoid closeCanvas(Canvas&)[m[K’:
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp:40:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanvas[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   40 | void closeCanvas( [01;35m[KCanvas& canvas[m[K) {
-      |                   [01;35m[K~~~~~~~~^~~~~~[m[K
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp:[m[K In function ‘[01m[Kvoid closeCanvas(Canvas&)[m[K’:
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/map_utils.cpp:40:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanvas[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   40 | void closeCanvas( [01;35m[KCanvas& canvas[m[K) {
-      |                   [01;35m[K~~~~~~~~^~~~~~[m[K

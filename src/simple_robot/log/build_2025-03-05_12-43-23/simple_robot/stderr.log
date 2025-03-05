@@ -1,4 +1,0 @@
-gmake[2]: Warning: File 'robot_map_node' has modification time 1475 s in the future
-gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
-gmake[2]: Warning: File 'src/libgrid_map.so' has modification time 1561 s in the future
-gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.

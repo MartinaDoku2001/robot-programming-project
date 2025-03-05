@@ -1,8 +1,0 @@
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In member function ‘[01m[Kvoid KeyboardControlNode::key_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:30:26:[m[K [01;35m[Kwarning: [m[Kstatement will never be executed [[01;35m[K-Wswitch-unreachable[m[K]
-   30 |             std::cout << [01;35m[K"Key: "[m[K << key << std::endl;
-      |                          [01;35m[K^~~~~~~[m[K
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:[m[K In member function ‘[01m[Kvoid KeyboardControlNode::key_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/martina/rp_project/robot-programming-project/src/simple_robot/src/main.cpp:30:26:[m[K [01;35m[Kwarning: [m[Kstatement will never be executed [[01;35m[K-Wswitch-unreachable[m[K]
-   30 |             std::cout << [01;35m[K"Key: "[m[K << key << std::endl;
-      |                          [01;35m[K^~~~~~~[m[K

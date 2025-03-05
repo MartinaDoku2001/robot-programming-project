@@ -4,6 +4,7 @@
 #include <Eigen/Geometry>
 #include <thread>
 #include <cstring>
+#include <string.h>
 
 
 /* code from github Repo: robotprogramming_2023_24*/
