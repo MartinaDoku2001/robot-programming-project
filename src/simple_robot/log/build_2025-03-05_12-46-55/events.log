@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.001715] (simple_robot) JobQueued: {'identifier': 'simple_robot', 'dependencies': OrderedDict()}
+[0.002409] (simple_robot) JobStarted: {'identifier': 'simple_robot'}
+[0.054263] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'cmake'}
+[0.056366] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/martina/rp_project/robot-programming-project/src/simple_robot', '-DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '861'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1099'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2441'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:10438'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1062,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1062'), ('INVOCATION_ID', 'd41eea5a77214ff18af65c9f647aefff'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2DKN22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'a7161ded-a4be-401b-bdce-92ccf5224d1f'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/0'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[0.098936] (-) TimerEvent: {}
+[0.199680] (-) TimerEvent: {}
+[0.300489] (-) TimerEvent: {}
+[0.401383] (-) TimerEvent: {}
+[0.454394] (simple_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.503636] (-) TimerEvent: {}
+[0.607015] (-) TimerEvent: {}
+[0.708855] (-) TimerEvent: {}
+[0.809989] (-) TimerEvent: {}
+[0.911591] (-) TimerEvent: {}
+[0.946816] (simple_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.016411] (-) TimerEvent: {}
+[1.061700] (simple_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.118583] (-) TimerEvent: {}
+[1.219557] (-) TimerEvent: {}
+[1.325815] (-) TimerEvent: {}
+[1.427170] (-) TimerEvent: {}
+[1.528382] (-) TimerEvent: {}
+[1.633133] (-) TimerEvent: {}
+[1.635635] (simple_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.713567] (simple_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[1.723601] (simple_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.731742] (simple_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.736916] (-) TimerEvent: {}
+[1.798638] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.838682] (-) TimerEvent: {}
+[1.944064] (-) TimerEvent: {}
+[2.045693] (-) TimerEvent: {}
+[2.150633] (-) TimerEvent: {}
+[2.252580] (-) TimerEvent: {}
+[2.353464] (-) TimerEvent: {}
+[2.454490] (-) TimerEvent: {}
+[2.549834] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.554609] (-) TimerEvent: {}
+[2.608550] (simple_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[2.609508] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.613349] (simple_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.655634] (-) TimerEvent: {}
+[2.680910] (simple_robot) StdoutLine: {'line': b'-- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") \n'}
+[2.695176] (simple_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.755874] (-) TimerEvent: {}
+[2.861983] (-) TimerEvent: {}
+[2.962774] (-) TimerEvent: {}
+[3.063578] (-) TimerEvent: {}
+[3.164325] (-) TimerEvent: {}
+[3.265108] (-) TimerEvent: {}
+[3.365877] (-) TimerEvent: {}
+[3.466815] (-) TimerEvent: {}
+[3.545782] (simple_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.569719] (-) TimerEvent: {}
+[3.670518] (-) TimerEvent: {}
+[3.771245] (-) TimerEvent: {}
+[3.872129] (-) TimerEvent: {}
+[3.972889] (-) TimerEvent: {}
+[4.001527] (simple_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.073086] (-) TimerEvent: {}
+[4.173690] (-) TimerEvent: {}
+[4.202372] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.226712] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.273170] (simple_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.273851] (-) TimerEvent: {}
+[4.341465] (simple_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.374043] (-) TimerEvent: {}
+[4.432715] (simple_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.474225] (-) TimerEvent: {}
+[4.574972] (-) TimerEvent: {}
+[4.639128] (simple_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.650808] (simple_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.675505] (-) TimerEvent: {}
+[4.776244] (-) TimerEvent: {}
+[4.876899] (-) TimerEvent: {}
+[4.977614] (-) TimerEvent: {}
+[5.078329] (-) TimerEvent: {}
+[5.179255] (-) TimerEvent: {}
+[5.218528] (simple_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.279476] (-) TimerEvent: {}
+[5.368454] (simple_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.379592] (-) TimerEvent: {}
+[5.480277] (-) TimerEvent: {}
+[5.581054] (-) TimerEvent: {}
+[5.587201] (simple_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.637233] (simple_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.681264] (-) TimerEvent: {}
+[5.782578] (-) TimerEvent: {}
+[5.884181] (-) TimerEvent: {}
+[5.988504] (-) TimerEvent: {}
+[6.091050] (-) TimerEvent: {}
+[6.189613] (simple_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.190902] (simple_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.191563] (-) TimerEvent: {}
+[6.292256] (-) TimerEvent: {}
+[6.395984] (-) TimerEvent: {}
+[6.500526] (-) TimerEvent: {}
+[6.601359] (-) TimerEvent: {}
+[6.681959] (simple_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.687333] (simple_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.704661] (-) TimerEvent: {}
+[6.805467] (-) TimerEvent: {}
+[6.906265] (-) TimerEvent: {}
+[7.007105] (-) TimerEvent: {}
+[7.029364] (simple_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[7.107289] (-) TimerEvent: {}
+[7.122488] (simple_robot) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.207520] (-) TimerEvent: {}
+[7.233196] (simple_robot) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[7.307690] (-) TimerEvent: {}
+[7.372489] (simple_robot) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[7.408093] (-) TimerEvent: {}
+[7.510113] (-) TimerEvent: {}
+[7.610929] (-) TimerEvent: {}
+[7.711753] (-) TimerEvent: {}
+[7.717020] (simple_robot) StdoutLine: {'line': b'-- DATA_DIR: /home/martina/rp_project/robot-programming-project/src/simple_robot/data\n'}
+[7.718559] (simple_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.815902] (-) TimerEvent: {}
+[7.919633] (-) TimerEvent: {}
+[8.004174] (simple_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[8.020375] (-) TimerEvent: {}
+[8.128516] (-) TimerEvent: {}
+[8.137735] (simple_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot\n'}
+[8.230516] (-) TimerEvent: {}
+[8.273621] (simple_robot) CommandEnded: {'returncode': 0}
+[8.295884] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'build'}
+[8.296123] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', '--', '-j4', '-l4'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '861'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1099'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2441'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:10438'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1062,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1062'), ('INVOCATION_ID', 'd41eea5a77214ff18af65c9f647aefff'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2DKN22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'a7161ded-a4be-401b-bdce-92ccf5224d1f'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/0'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[8.331111] (-) TimerEvent: {}
+[8.434582] (-) TimerEvent: {}
+[8.536459] (-) TimerEvent: {}
+[8.638966] (-) TimerEvent: {}
+[8.742598] (-) TimerEvent: {}
+[8.820170] (simple_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_map_node\x1b[0m\n'}
+[8.834064] (simple_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grid_map\x1b[0m\n'}
+[8.843460] (-) TimerEvent: {}
+[8.947631] (-) TimerEvent: {}
+[9.026608] (simple_robot) StderrLine: {'line': b"gmake[2]: Warning: File 'robot_map_node' has modification time 1270 s in the future\n"}
+[9.041553] (simple_robot) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[9.049009] (simple_robot) StderrLine: {'line': b"gmake[2]: Warning: File 'src/libgrid_map.so' has modification time 1356 s in the future\n"}
+[9.053714] (-) TimerEvent: {}
+[9.091020] (simple_robot) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[9.156597] (-) TimerEvent: {}
+[9.181269] (simple_robot) StdoutLine: {'line': b'[ 50%] Built target grid_map\n'}
+[9.199032] (simple_robot) StdoutLine: {'line': b'[100%] Built target robot_map_node\n'}
+[9.257369] (-) TimerEvent: {}
+[9.298577] (simple_robot) CommandEnded: {'returncode': 0}
+[9.305948] (simple_robot) JobProgress: {'identifier': 'simple_robot', 'progress': 'install'}
+[9.357576] (-) TimerEvent: {}
+[9.374014] (simple_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'], 'cwd': '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/env /usr/bin/lesspipe %s 2>/dev/null'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LC_TIME', 'it_IT.UTF-8'), ('USER', 'martina'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:~/anaconda3/lib'), ('HOME', '/home/martina'), ('OLDPWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERMINFO', '/home/martina/.terminfo'), ('LESS', '-iRFXMx4'), ('CONDA_SHLVL', '1'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('LSCOLORS', 'ExGxDxDxCxDxDxFxFxexEx'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '861'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1099'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2441'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('INFOPATH', ''), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install'), ('LOGNAME', 'martina'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:10438'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('USER_ZDOTDIR', '/home/martina'), ('ROS_VERSION', '2'), ('USERNAME', 'martina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/martina/.local/bin:/home/martina/.local/bin:/usr/lib/ccache:.:/home/martina/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/martina/anaconda3/condabin:/home/martina/bin:/home/martina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/martina/.cache/zsh4humans/v5/fzf/bin:/home/martina/other/install/bin'), ('SESSION_MANAGER', 'local/Martina-ThinkPad-X1-Yoga:@/tmp/.ICE-unix/1062,unix/Martina-ThinkPad-X1-Yoga:/tmp/.ICE-unix/1062'), ('INVOCATION_ID', 'd41eea5a77214ff18af65c9f647aefff'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_INJECTION', '1'), ('LD_PRELOAD', ':/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2DKN22'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f640f2b3f6.sock'), ('LS_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:no=38;5;248'), ('TREE_COLORS', 'fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('CONDA_PYTHON_EXE', '/home/martina/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/usr/local/bin/zsh'), ('DEST', '/home/martina/other/install'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('P9K_SSH', '0'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', 'a7161ded-a4be-401b-bdce-92ccf5224d1f'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot'), ('GPG_TTY', '/dev/pts/0'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/martina'), ('_P9K_TTY', '/dev/pts/0'), ('CONDA_EXE', '/home/martina/anaconda3/bin/conda'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/martina/other/install/lib/python3.10/site-packages/'), ('LC_PAPER', 'it_IT.UTF-8'), ('CONDA_PREFIX', '/home/martina/anaconda3'), ('COLCON', '1'), ('MANPATH', '/usr/local/share/man:/home/martina/.cache/zsh4humans/v5/fzf/man:'), ('CMAKE_PREFIX_PATH', '/home/martina/rp_project/robot-programming-project/install/simple_robot:/opt/ros/humble')]), 'shell': False}
+[9.449732] (simple_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.451015] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/simple_robot/robot_map_node\n'}
+[9.455621] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/package_run_dependencies/simple_robot\n'}
+[9.456193] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/parent_prefix_path/simple_robot\n'}
+[9.458763] (-) TimerEvent: {}
+[9.459385] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.sh\n'}
+[9.459975] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.dsv\n'}
+[9.460419] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.sh\n'}
+[9.460885] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.dsv\n'}
+[9.461305] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.bash\n'}
+[9.461792] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.sh\n'}
+[9.462203] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.zsh\n'}
+[9.471134] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.dsv\n'}
+[9.471770] (simple_robot) StdoutLine: {'line': b'-- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.dsv\n'}
+[9.472227] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/packages/simple_robot\n'}
+[9.472700] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig.cmake\n'}
+[9.473116] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig-version.cmake\n'}
+[9.491507] (simple_robot) StdoutLine: {'line': b'-- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.xml\n'}
+[9.492209] (simple_robot) CommandEnded: {'returncode': 0}
+[9.559753] (-) TimerEvent: {}
+[9.603412] (simple_robot) JobEnded: {'identifier': 'simple_robot', 'rc': 0}
+[9.608772] (-) EventReactorShutdown: {}

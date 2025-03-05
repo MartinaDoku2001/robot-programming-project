@@ -27,10 +27,14 @@ private:
         key = msg->data;
         float angle = 0.0;
         switch (key) {
-            case 82: angle = M_PI / 2; break; // Up
-            case 84: angle = -M_PI / 2; break; // Down
-            case 81: angle = M_PI; break; // Left
-            case 83: angle = 0; break; // Right
+            case 82: case 65362:
+            angle = M_PI / 2; break; // Up
+            case 84: case 65364:
+            angle = -M_PI / 2; break; // Down
+            case 81: case 65361:
+            angle = M_PI; break; // Left
+            case 83: case 65363:
+            angle = 0; break; // Right
             case 113: // 'q' key to toggle laser
             {
                 laser_active_ = !laser_active_;
@@ -38,8 +42,7 @@ private:
                 auto laser_msg = std_msgs::msg::Int32();
                 laser_msg.data = laser_active_;
                 laser_pub_->publish(laser_msg);
-                std::cout << "Publishing laser active: " << laser_active_ << "from keyboard control node\n";
-                break;
+               break;
             }
             case -1: angle = -1; break; // No key pressed
             default:
@@ -48,9 +51,9 @@ private:
 
         auto angle_msg = std_msgs::msg::Float32();
         angle_msg.data = angle;
+        std::cout << "Publishing angle message from keyboard node " << angle_msg.data << std::endl;
         angle_pub_->publish(angle_msg);
-        std::cout << "Publishing angle: " << angle << "from keyboard control node\n";
-    }
+      }
 
 
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr angle_pub_;
@@ -83,20 +86,21 @@ public:
         
 
         laser_timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(10), 
+            std::chrono::milliseconds(100), 
             std::bind(&RobotNode::laser_spin, this));
     }
 
 private:
     void angle_callback(const std_msgs::msg::Float32::SharedPtr msg) {
+        std::cout << "Received angle message in robot node " << msg->data << std::endl;
         if (msg->data == -1) {
             //publish the same position
             auto position_msg = geometry_msgs::msg::Pose2D();
             position_msg.x = robot_.getPosition()[0];
             position_msg.y = robot_.getPosition()[1];
+            std::cout << "Publishing position message from robot node " << position_msg.x << ", " << position_msg.y << std::endl;
             position_pub_->publish(position_msg);
-            std::cout << "Publishing position: " << position_msg.x << ", " << position_msg.y << "from robot node -no change\n";
-            return;
+           return;
         }
         robot_.step(msg->data, 0.5);
 
@@ -105,7 +109,6 @@ private:
         bool hit = grid_map_.is_colliding(x, y);
 
         if (hit) {
-            std::cout << "Robot is colliding with an obstacle\n";
             robot_.step(msg->data + M_PI, 0.5);
         }
 
@@ -113,13 +116,11 @@ private:
         position_msg.x = robot_.getPosition()[0];
         position_msg.y = robot_.getPosition()[1];
         position_pub_->publish(position_msg);
-        std::cout << "Publishing position: " << position_msg.x << ", " << position_msg.y << "from robot node\n";
-    }
+     }
 
     void laser_callback(const std_msgs::msg::Int32::SharedPtr msg) {
         laser_active_ = msg->data;
-        std::cout << "Laser " << (laser_active_ ? "ON" : "OFF") << std::endl;
-    }
+     }
 
     void laser_spin() {
         if (laser_active_) {
@@ -132,8 +133,6 @@ private:
             auto laser_angle_msg = std_msgs::msg::Float32();
             laser_angle_msg.data = laser_angle_;
             laser_angle_pub_->publish(laser_angle_msg);
-            std::cout << "Publishing laser angle: " << laser_angle_ << "from robot node\n";
-               
         }
      
 
@@ -194,6 +193,9 @@ class MapNode : public rclcpp::Node {
             Canvas canvas;
             grid_map_.draw(canvas);
             robot_.draw(canvas, grid_map_, 127, 5);
+
+            // Draw the goal as a red circle
+            drawCircle(canvas, grid_map_.gm.world2grid(goal_position_).cast<int>(), 10, 127);
             
             if (laser_active_) {
                 float origin_x = robot_.getPosition()[0], origin_y = robot_.getPosition()[1];
@@ -201,21 +203,29 @@ class MapNode : public rclcpp::Node {
                 float dir_y = sin(laser_angle_);
                 float max_range = 10.0;
                 Vector2f destination;
-                grid_map_.scanRay(destination, Vector2f(origin_x, origin_y), Vector2f(dir_x, dir_y), max_range);
+                hit_ = grid_map_.scanRay(destination, Vector2f(origin_x, origin_y), Vector2f(dir_x, dir_y), max_range);
+                if (hit_) {
+                    distance_ = grid_map_.scanRayDistance(Vector2f(origin_x, origin_y), Vector2f(dir_x, dir_y), max_range);
+                } else {
+                    distance_ = 0;
+                }
                 drawLine(canvas, grid_map_.gm.world2grid(Vector2f(origin_x, origin_y)).cast<int>(), 
                          grid_map_.gm.world2grid(destination).cast<int>(), 127);
+                displayValuesOnCanvas(canvas, distance_, robot_.getPosition(), goal_position_, laser_active_, goal_reached_, 0.0);
             }
-    
+            
             key = showCanvas(canvas, 10);
             auto key_msg = std_msgs::msg::Int32();
             key_msg.data = key;
             key_pub_->publish(key_msg);
-            std::cout << "Publishing key: " << key << "from map node\n";
-        }
+           }
     
         void position_callback(const geometry_msgs::msg::Pose2D::SharedPtr msg) {
             robot_.setPosition(msg->x, msg->y); 
             
+            
+            // print something if it gets here
+            std::cout << "Position: " << msg->x << ", " << msg->y << std::endl;
             // If laser is inactive, update the map only on position changes
             if (!laser_active_) {
                 display_map();  // Refresh map when the position changes but laser is off
@@ -232,8 +242,7 @@ class MapNode : public rclcpp::Node {
         }
     
         void laser_angle_callback(const std_msgs::msg::Float32::SharedPtr msg) {
-            std::cout << "Received laser angle: " << msg->data << std::endl;
-            laser_angle_ = msg->data;
+           laser_angle_ = msg->data;
     
             // If laser is active, update the map
             if (laser_active_) {
@@ -242,10 +251,14 @@ class MapNode : public rclcpp::Node {
         }
     
         GridMap grid_map_;
+        float distance_;
         Robot robot_ = Robot(-40.0, -27.0);
+        bool goal_reached_ = false;
+        Eigen::Vector2f goal_position_ = Eigen::Vector2f(40.0, -26.0);
         int key = -1;
         bool laser_active_;
         float laser_angle_;
+        bool hit_;
     
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr map_pub_;
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr key_pub_;
@@ -267,14 +280,16 @@ int main(int argc, char **argv) {
 
     // Run control loop for keyboard node
 
-    rclcpp::executors::MultiThreadedExecutor executor;
-    executor.add_node(control_node);
-    executor.add_node(robot_node);
-    executor.add_node(map_node);
+    std::thread control_thread([&]() { rclcpp::spin(control_node); });
+    std::thread robot_thread([&]() { rclcpp::spin(robot_node); });
+    std::thread map_thread([&]() { rclcpp::spin(map_node); });
+
+    control_thread.join();
+    robot_thread.join();
+    map_thread.join();
+
     
-    std::thread spin_thread([&]() { executor.spin(); });
-    spin_thread.join();
-    
+ 
     rclcpp::shutdown();
     return 0;
 }

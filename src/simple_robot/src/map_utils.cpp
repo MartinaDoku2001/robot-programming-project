@@ -2,6 +2,9 @@
 #include "../include/grid_map.h"
 #include <iostream>
 #include <Eigen/Geometry>
+#include <thread>
+#include <cstring>
+
 
 /* code from github Repo: robotprogramming_2023_24*/
 
@@ -22,20 +25,34 @@ void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color)
     cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color,color,color),1);
 }
 
-
-int showCanvas( Canvas& canvas, int timeout_ms) {
- //show the image in a fixed size window size
-    cv::imshow("Canvas", canvas);
-
-    //make the canvas focused
-    cv::setWindowProperty("Canvas", cv::WND_PROP_TOPMOST, 1);
-    
-    int key = cv::waitKey(timeout_ms);
-    if (key == 27) { //exit on ESC
-        exit(0);
-    }
-    return key;
+void drawCircle(Canvas& dest, const Vector2i& center, int radius, uint8_t color_red, uint8_t color_green, uint8_t color_blue) {
+    cv::circle(dest, cv::Point(center.x(), center.y()), radius, cv::Scalar(color_blue,color_green,color_red),1);
 }
+
+
+int showCanvas(Canvas& canvas, int timeout_ms) {
+    cv::imshow("Canvas", canvas);
+    cv::setWindowProperty("Canvas", cv::WND_PROP_TOPMOST, 1);
+
+    auto start_time = std::chrono::high_resolution_clock::now();
+    int key = -1;
+
+    while (std::chrono::duration_cast<std::chrono::milliseconds>(
+               std::chrono::high_resolution_clock::now() - start_time)
+               .count() < timeout_ms) {
+        key = cv::pollKey(); // Non-blocking key check
+        if (key != -1) {
+            if (key == 27) { // Exit on ESC
+                exit(0);
+            }
+            return key;
+        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(1)); // Small sleep to avoid CPU overuse
+    }
+
+    return -1; // No key pressed within timeout
+}
+
 
 void closeCanvas() {
     cv::destroyWindow("Canvas");
@@ -43,6 +60,41 @@ void closeCanvas() {
 
 void refreshCanvas(Canvas& canvas) {
     cv::imshow("Canvas", canvas);
+}
+
+void displayValuesOnCanvas( Canvas& canvas, float distance, Eigen::Vector2f robot_position) {
+    cv::putText(canvas, "Distance: " + std::to_string(distance), cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0,0,0), 1);
+    cv::putText(canvas, "Robot Position: " + std::to_string(robot_position[0]) + ", " + std::to_string(robot_position[1]), cv::Point(10, 50), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0,0,0), 1);
+}
+
+void displayValuesOnCanvas(Canvas& canvas, float distance, Eigen::Vector2f robot_position, 
+    Eigen::Vector2f goal_position, bool laser_active, bool goal_reached,  float time_elapsed) {
+// Create a background rectangle
+cv::rectangle(canvas, cv::Point(5, 5), cv::Point(350, 130), cv::Scalar(255, 255, 255), cv::FILLED);
+cv::rectangle(canvas, cv::Point(5, 5), cv::Point(350, 130), cv::Scalar(0, 0, 0), 1);  // Border
+
+// Display text with improved formatting
+cv::putText(canvas, "Distance: " + std::to_string(distance) + "m", cv::Point(10, 20),
+cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 255), 1);
+
+cv::putText(canvas, "Position: (" + std::to_string(robot_position[0]) + ", " + std::to_string(robot_position[1]) + ")", 
+cv::Point(10, 40), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0), 1);
+
+cv::putText(canvas, "Goal: (" + std::to_string(goal_position[0]) + ", " + std::to_string(goal_position[1]) + ")", 
+cv::Point(10, 60), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 128, 255), 1);
+
+std::string laser_status = laser_active ? "ON" : "OFF";
+cv::putText(canvas, "Laser: " + laser_status, cv::Point(10, 80), 
+cv::FONT_HERSHEY_SIMPLEX, 0.5, laser_active ? cv::Scalar(0, 255, 0) : cv::Scalar(0, 0, 255), 1);
+
+cv::putText(canvas, "Time: " + std::to_string(time_elapsed) + "s", cv::Point(10, 100),
+cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0), 1);
+
+// Highlight goal reached message
+if (goal_reached) {
+cv::putText(canvas, "GOAL REACHED!", cv::Point(10, 120),
+cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 2);
+}
 }
 
 void GridMapping::resize(int rows, int cols, float resolution) {

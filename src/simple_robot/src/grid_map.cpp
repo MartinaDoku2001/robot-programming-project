@@ -2,6 +2,7 @@
 #include "grid_map.h"
 #include "grid.h"
 #include <map_utils.h>
+#include <cstring>
 using namespace std;
 
 
@@ -33,7 +34,7 @@ bool GridMap::scanRay(Vector2f& hit,
   return false;
 }
 
-float GridMap::scanRay(const Vector2f& origin,
+float GridMap::scanRayDistance(const Vector2f& origin,
                         const Vector2f& direction,
                         const float max_range) const {
   float range = 0;

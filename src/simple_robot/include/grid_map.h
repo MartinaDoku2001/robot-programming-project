@@ -35,7 +35,7 @@ struct GridMap: public Grid_<uint8_t> {
   /**
    * @brief Scans a ray in the map.
    * 
-   * This function scans a ray in the map
+   * This function scans a ray in the map and returns True if the ray hits an obstacle.
    * 
    * @param hit The hit point of the ray.
    * @param origin The origin of the ray.
@@ -52,7 +52,7 @@ struct GridMap: public Grid_<uint8_t> {
   /**
    * @brief Scans a ray in the map.
    * 
-   * This function scans a ray in the map
+   * This function scans a ray in the  map and returns the distance to the hit point (if hitting)
    * 
    * @param origin The origin of the ray.
    * @param direction The direction of the ray.
@@ -60,7 +60,7 @@ struct GridMap: public Grid_<uint8_t> {
    * 
    * @return The range of the ray.
    */
-  float scanRay(const Vector2f& origin,
+  float scanRayDistance(const Vector2f& origin,
                  const Vector2f& direction,
                  const float max_range) const;
   

@@ -15,12 +15,30 @@ void drawLine(Canvas& canvas, const Vector2i& start, const Vector2i& end, uint8_
 
 void drawCircle(Canvas& canvas, const Vector2i& center, int radius, uint8_t color);
 
+void drawCircle(Canvas& canvas, const Vector2i& center, int radius, uint8_t color_red, uint8_t color_green, uint8_t color_blue);
+
 int showCanvas( Canvas& canvas, int timeout_ms);
 
 void closeCanvas();
 
 void refreshCanvas(Canvas& canvas);
 
+/**
+ * @brief RFunction to display the values on the canvas.
+ * 
+ * This function displays the values of the distance of the closest obstacle in the laser range (given as a parameter)
+ * and the position of the robot on the canvas.
+ * 
+ * @param canvas The canvas to display the values on.
+ * @param distance The distance of the closest obstacle in the laser range.
+ * @param robot_position The position of the robot.
+ * 
+ */
+void displayValuesOnCanvas( Canvas& canvas, float distance, Eigen::Vector2f robot_position);
+
+
+void displayValuesOnCanvas(Canvas& canvas, float distance, Eigen::Vector2f robot_position, 
+    Eigen::Vector2f goal_position, bool laser_active, bool goal_reached,  float time_elapsed);
 
 /**
  * @brief Represents a grid map.

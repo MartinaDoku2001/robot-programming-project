@@ -1,0 +1,70 @@
+[0.292s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[0.948s] -- The C compiler identification is GNU 11.4.0
+[2.064s] -- The CXX compiler identification is GNU 11.4.0
+[2.183s] -- Detecting C compiler ABI info
+[3.241s] -- Detecting C compiler ABI info - done
+[3.404s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[3.411s] -- Detecting C compile features
+[3.419s] -- Detecting C compile features - done
+[3.472s] -- Detecting CXX compiler ABI info
+[4.282s] -- Detecting CXX compiler ABI info - done
+[4.420s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[4.426s] -- Detecting CXX compile features
+[4.433s] -- Detecting CXX compile features - done
+[4.528s] -- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") 
+[4.547s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.188s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.940s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[7.233s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.255s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.316s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.405s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.720s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.363s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.379s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.238s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.443s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.752s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.811s] -- Looking for pthread.h
+[10.400s] -- Looking for pthread.h - found
+[10.404s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.649s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.667s] -- Found Threads: TRUE  
+[12.343s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[12.506s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[12.812s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[13.161s] -- Found OpenCV: /usr (found version "4.5.4") 
+[13.853s] -- DATA_DIR: /home/martina/rp_project/robot-programming-project/src/simple_robot/data
+[13.860s] -- Configuring done
+[14.436s] -- Generating done
+[14.560s] -- Build files have been written to: /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[14.688s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[14.720s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[15.901s] [35m[1mConsolidate compiler generated dependencies of target robot_map_node[0m
+[16.422s] gmake[2]: Warning: File 'robot_map_node' has modification time 1392 s in the future
+[16.488s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.623s] [ 50%] Built target robot_map_node
+[16.772s] [35m[1mConsolidate compiler generated dependencies of target grid_map[0m
+[16.939s] gmake[2]: Warning: File 'src/libgrid_map.so' has modification time 1478 s in the future
+[16.954s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[17.061s] [100%] Built target grid_map
+[17.224s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot -- -j4 -l4
+[17.352s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot
+[17.431s] -- Install configuration: ""
+[17.438s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/lib/simple_robot/robot_map_node
+[17.443s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/package_run_dependencies/simple_robot
+[17.447s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/parent_prefix_path/simple_robot
+[17.448s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.sh
+[17.451s] -- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/ament_prefix_path.dsv
+[17.463s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.sh
+[17.465s] -- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/environment/path.dsv
+[17.483s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.bash
+[17.490s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.sh
+[17.491s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.zsh
+[17.492s] -- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/local_setup.dsv
+[17.502s] -- Installing: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.dsv
+[17.505s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/ament_index/resource_index/packages/simple_robot
+[17.510s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig.cmake
+[17.515s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/cmake/simple_robotConfig-version.cmake
+[17.520s] -- Up-to-date: /home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot/share/simple_robot/package.xml
+[17.529s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot

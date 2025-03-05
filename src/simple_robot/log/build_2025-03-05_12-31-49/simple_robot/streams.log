@@ -1,0 +1,34 @@
+[0.028s] Invoking command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot': /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot
+[0.294s] -- The C compiler identification is GNU 11.4.0
+[0.609s] -- The CXX compiler identification is GNU 11.4.0
+[0.664s] -- Detecting C compiler ABI info
+[1.007s] -- Detecting C compiler ABI info - done
+[1.090s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.094s] -- Detecting C compile features
+[1.098s] -- Detecting C compile features - done
+[1.125s] -- Detecting CXX compiler ABI info
+[1.680s] -- Detecting CXX compiler ABI info - done
+[1.771s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.775s] -- Detecting CXX compile features
+[1.782s] -- Detecting CXX compile features - done
+[1.874s] -- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4.5.4") 
+[1.943s] CMake Error at CMakeLists.txt:10 (find_package):
+[1.945s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.946s]   has asked CMake to find a package configuration file provided by
+[1.947s]   "ament_cmake", but CMake did not find one.
+[1.949s] 
+[1.949s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.950s]   any of the following names:
+[1.950s] 
+[1.951s]     ament_cmakeConfig.cmake
+[1.953s]     ament_cmake-config.cmake
+[1.957s] 
+[1.958s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.962s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.962s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.963s]   has been installed.
+[1.963s] 
+[1.964s] 
+[1.965s] -- Configuring incomplete, errors occurred!
+[1.968s] See also "/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot/CMakeFiles/CMakeOutput.log".
+[1.973s] Invoked command in '/home/martina/rp_project/robot-programming-project/src/simple_robot/build/simple_robot' returned '1': /usr/bin/cmake /home/martina/rp_project/robot-programming-project/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/martina/rp_project/robot-programming-project/src/simple_robot/install/simple_robot

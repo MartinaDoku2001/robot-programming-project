@@ -11,6 +11,7 @@ colcon build --packages-select simple_robot --cmake-clean-cache --event-handlers
 # Detect the shell and source the correct setup file
 echo "🔄 Sourcing ROS2 setup..."
 source install/setup.zsh
+colcon build 
 
 # Run the node
 echo "🚀 Running the robot_map_node..."
